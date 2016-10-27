@@ -1,6 +1,16 @@
 OpenTSDB:
   backends:
     - HBase
+
 KairosDB:
+  description: A tsdb
   backends:
     - Cassandra
+Heroic:
+  description: A tsdb
+  backends:
+    - Cassandra
+    - HBase
+    - Bigtable
+  links:
+    "t": https://www.baidu.com

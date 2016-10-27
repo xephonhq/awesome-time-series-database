@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/xephonhq/awesome-time-series-database#readme",
   "devDependencies": {
+    "handlebars": "^4.0.5",
     "js-yaml": "^3.6.1",
     "lodash": "^4.15.0",
-    "mustache": "^2.2.1"
   }
 }

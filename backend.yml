@@ -13,6 +13,7 @@ Cassandra:
     "Advanced Time Series with Cassandra": http://www.datastax.com/dev/blog/advanced-time-series-with-cassandra
   databases:
     - KairosDB
+    - Heoric
 Bigtable:
   url: https://cloud.google.com/bigtable/
   links:

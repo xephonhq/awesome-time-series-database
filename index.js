@@ -3,7 +3,7 @@
 const fs = require('fs');
 const _ = require('lodash');
 const yaml = require('js-yaml');
-const Mustache = require('mustache');
+const hb = require('handlebars');
 
 // TODO: migrate code from https://github.com/tongquhq/about/blob/master/lib/config/parser.js to support $ref in yaml
 
@@ -16,7 +16,10 @@ const data = {
   backends: backends,
   databases: databases
 };
-let out = Mustache.render(fs.readFileSync('README.mustache', 'utf-8'), data);
+let tmpl = hb.compile(fs.readFileSync('README.tmpl', 'utf-8'));
+// let out = Mustache.render(fs.readFileSync('README.mustache', 'utf-8'), data);
+let out = tmpl(data);
+
 console.log(out);
 
 // toc, use es6 template like https://github.com/tongquhq/about/blob/master/lib/cli/command.js

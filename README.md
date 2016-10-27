@@ -6,7 +6,18 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 - [Time series databases](#time-series-database)
   - [In Memory](#in-memory)
   - [Cassandra](#cassandra)
+  - [HBase](#hbase)
 - [Monitoring solutions](#monitoring-solutions)
+
+TODO: use yaml and node js to generate the markdown
+TODO: anomaly detect like https://github.com/yahoo/egads with OpenTSDB 3.x
+
+| Database        | Backend        | Paper or Blog  |
+| ------------- |:-------------:| -----:|
+| [OpenTSDB](https://github.com/OpenTSDB/opentsdb)   | HBase | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 
 ## Time series databases
 

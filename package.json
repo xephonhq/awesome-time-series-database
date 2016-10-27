@@ -1,0 +1,28 @@
+{
+  "name": "awesome-time-series-database",
+  "version": "0.0.1",
+  "description": "A curated list of awesome time series databases, benchmark tools, blog and published papers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xephonhq/awesome-time-series-database.git"
+  },
+  "keywords": [
+    "time series",
+    "database",
+    "distributed systems",
+    "awesome"
+  ],
+  "author": "at15@outlook.com",
+  "license": "SEE LICENSE IN http://creativecommons.org/publicdomain/zero/1.0/",
+  "bugs": {
+    "url": "https://github.com/xephonhq/awesome-time-series-database/issues"
+  },
+  "homepage": "https://github.com/xephonhq/awesome-time-series-database#readme",
+  "devDependencies": {
+    "js-yaml": "^3.6.1"
+  }
+}

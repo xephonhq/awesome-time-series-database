@@ -1,0 +1,27 @@
+# Common time series database backends
+
+HBase:
+  url: http://hbase.apache.org/
+  links:
+    "HBase in Action (Manning Publications) - Chapter 7: HBase by Example: OpenTSDB": http://www.manning.com/dimidukkhurana/
+  databases:
+    - OpenTSDB
+
+Cassandra:
+  url: http://cassandra.apache.org/
+  links:
+    "Basic Time Series with Cassandra": http://www.rubyscale.com/post/143067470585/basic-time-series-with-cassandra
+    "Advanced Time Series with Cassandra": http://www.datastax.com/dev/blog/advanced-time-series-with-cassandra
+  databases:
+    - KairosDB
+    - Heroic
+
+Bigtable:
+  url: https://cloud.google.com/bigtable/
+  links:
+    "Cloud Bigtable Schema Design for Time Series Data": https://cloud.google.com/bigtable/docs/schema-design-time-series
+
+Memoery:
+  url: N/A
+  links:
+    "Gorilla: A Fast, Scalable, In-Memory Time Series Database": http://www.vldb.org/pvldb/vol8/p1816-teller.pdf

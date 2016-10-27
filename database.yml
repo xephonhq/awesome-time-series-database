@@ -1,0 +1,24 @@
+OpenTSDB:
+  url: http://opentsdb.net/
+  description:  Classical time series database on top of HBase. Now support Cassandra and Bigtable.
+  language: java
+  backends:
+    - HBase
+
+KairosDB:
+  url: https://kairosdb.github.io/
+  description: Fast Time Series Database on Cassandra
+  language: java
+  backends:
+    - Cassandra
+
+Heroic:
+  url: https://spotify.github.io/heroic/
+  description: A scalable time series database based on Bigtable, Cassandra, and Elasticsearch
+  language: java
+  backends:
+    - Cassandra
+    - HBase
+    - Bigtable
+  links:
+    "Monitoring at Spotify - Introducing Heroic": https://labs.spotify.com/2015/11/17/monitoring-at-spotify-introducing-heroic/

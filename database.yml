@@ -1,12 +1,15 @@
 OpenTSDB:
+  url: http://opentsdb.net/
   backends:
     - HBase
 
 KairosDB:
+  url: https://kairosdb.github.io/
   description: A tsdb
   backends:
     - Cassandra
 Heroic:
+  url: https://spotify.github.io/heroic/
   description: A tsdb
   backends:
     - Cassandra

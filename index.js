@@ -16,36 +16,28 @@ const data = {
   backends: backends,
   databases: databases
 };
+let toRef = function(name) {
+  // http://stackoverflow.com/questions/1983648/replace-space-with-dash-and-make-all-letters-lower-case-using-javascript
+  return name.replace(/\s+/g, '-').toLowerCase();
+}
+hb.registerHelper('toRef', toRef);
+hb.registerHelper('db', function(dbName){
+  let db = databases[dbName];
+  if (db == undefined) {
+    console.error(dbName, 'is not defined!');
+    return '';
+  }
+  return `
+- [${dbName}](${toRef(db.url)}) ${db.description}
+${_.map(db.links, (v, k)=> {
+                return `  - [${k}](${v})`;
+            }).join('\n')}
+`
+});
 let tmpl = hb.compile(fs.readFileSync('README.tmpl', 'utf-8'));
 // let out = Mustache.render(fs.readFileSync('README.mustache', 'utf-8'), data);
 let out = tmpl(data);
 
 console.log(out);
 
-// toc, use es6 template like https://github.com/tongquhq/about/blob/master/lib/cli/command.js
-// let toc = `
-//
-// - [Time series databases](#time-series-database)
-// ${_.map(backends, (v, k)=> {
-//   // TODO: may need to change the link to dash-case
-//                 return `  - [${k}](#${k})`;
-//             }).join('\n')}
-// `;
-//
-// console.log(toc);
-
-// let databasesContent = `
-// ## Time series databases
-//
-// NOTE: some databases have multiple backends, they are grouped by their default backend.
-//
-// ${_.map(backends, (v, k)=> {
-//                 return `### ${k}
-// ${_.map(v.databases, (v, k) => {
-//                 return `- [${v}]`;
-// })}
-// `;
-//             }).join('\n')}
-// `
-//
-// console.log(databasesContent);
+fs.writeFileSync('README.md', out);

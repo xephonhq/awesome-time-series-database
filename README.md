@@ -4,42 +4,114 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 ## Contents
 
 - [Time series databases](#time-series-database)
-  - [In Memory](#in-memory)
-  - [Cassandra](#cassandra)
   - [HBase](#hbase)
+  - [Cassandra](#cassandra)
+  - [Bigtable](#bigtable)
 - [Monitoring solutions](#monitoring-solutions)
 
-TODO: use yaml and node js to generate the markdown
-TODO: anomaly detect like https://github.com/yahoo/egads with OpenTSDB 3.x
+aside
 
-| Database        | Backend        | Paper or Blog  |
-| ------------- |:-------------:| -----:|
-| [OpenTSDB](https://github.com/OpenTSDB/opentsdb)   | HBase | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+aside
 
+aside
+a
+
+side
+
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+
+aside
+
+aside
+
+aside
+a
+
+side
+
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+aside
+
+\aside
+
+aside
+
+aside
+a
+
+side
+
+aside
+
+aside
+
+aside
+a
+
+side
+
+aside
+
+aside
+
+aside
+a
+
+side
+
+
+
+aside
 
 ## Time series databases
 
-NOTE: some databases have multiple backends, they are grouped by their default backend.
+### HBase
 
-### In Memory
 
-- [Gorilla](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf) From Facebook, A closed source fast in memory time series database.
-  - [Review of Gorilla by Adrian Colyer in the morning paper](https://blog.acolyer.org/2016/05/03/gorilla-a-fast-scalable-in-memory-time-series-database/)
+- [OpenTSDB](http://opentsdb.net/) undefined
+
+
 
 ### Cassandra
 
-- [KairosDB](https://kairosdb.github.io/) Fast Time Series Database on Cassandra. Was a fork of OpenTSDB but choose Cassandra over HBase at last.
-- [Heroic](https://spotify.github.io/heroic/) From [Spotify](https://github.com/spotify), A scalable time series database based on Bigtable, Cassandra, and Elasticsearch.
 
-### HBase
+- [KairosDB](https://kairosdb.github.io/) A tsdb
 
-- [OpenTSDB](http://opentsdb.net/) Classical time series database on top of HBase. Now support Cassandra and Bigtable. Detail documentation for time series beginners.
+
+
+- [Heroic](https://spotify.github.io/heroic/) A tsdb
+  - [t](https://www.baidu.com)
+
+
+### Bigtable
+
+
 
 ## Monitoring solutions
 
-- [Bosun](https://github.com/bosun-monitor/bosun) Built by Stack Exchange, A time series alerting framework using [OpenTSDB](http://opentsdb.net/) with a [metrics collector](https://github.com/bosun-monitor/bosun/tree/master/cmd/scollector).
+
 
 ## License
 

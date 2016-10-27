@@ -4,11 +4,15 @@ HBase:
   url: http://hbase.apache.org/
   links:
     "HBase in Action (Manning Publications) - Chapter 7: HBase by Example: OpenTSDB": http://www.manning.com/dimidukkhurana/
+  databases:
+    - OpenTSDB
 Cassandra:
   url: http://cassandra.apache.org/
   links:
     "Basic Time Series with Cassandra": http://www.rubyscale.com/post/143067470585/basic-time-series-with-cassandra
     "Advanced Time Series with Cassandra": http://www.datastax.com/dev/blog/advanced-time-series-with-cassandra
+  databases:
+    - KairosDB
 Bigtable:
   url: https://cloud.google.com/bigtable/
   links:

@@ -1,3 +1,6 @@
 OpenTSDB:
-  backend: HBase
-  
+  backends:
+    - HBase
+KairosDB:
+  backends:
+    - Cassandra

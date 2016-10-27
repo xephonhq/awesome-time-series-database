@@ -18,6 +18,14 @@ NOTE: some databases have multiple backends, they are grouped by their default b
 {{#each backends}}
 ### {{@key}}
 
+#### Design
+
+{{#each links}}
+- [{{@key}}]({{this}})
+{{/each}}
+
+#### Databases
+
 {{#each databases}}
 {{db this}}
 {{/each}}

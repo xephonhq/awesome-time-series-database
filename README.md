@@ -17,11 +17,24 @@ NOTE: some databases have multiple backends, they are grouped by their default b
 
 ### HBase
 
+#### Design
+
+- [HBase in Action (Manning Publications) - Chapter 7: HBase by Example: OpenTSDB](http://www.manning.com/dimidukkhurana/)
+
+#### Databases
+
 - [OpenTSDB](http://opentsdb.net/) Classical time series database on top of HBase. Now support Cassandra and Bigtable.
   - Language: java
   - Backends: [HBase](#hbase)
 
 ### Cassandra
+
+#### Design
+
+- [Basic Time Series with Cassandra](http://www.rubyscale.com/post/143067470585/basic-time-series-with-cassandra)
+- [Advanced Time Series with Cassandra](http://www.datastax.com/dev/blog/advanced-time-series-with-cassandra)
+
+#### Databases
 
 - [KairosDB](https://kairosdb.github.io/) Fast Time Series Database on Cassandra
   - Language: java
@@ -33,7 +46,19 @@ NOTE: some databases have multiple backends, they are grouped by their default b
 
 ### Bigtable
 
+#### Design
+
+- [Cloud Bigtable Schema Design for Time Series Data](https://cloud.google.com/bigtable/docs/schema-design-time-series)
+
+#### Databases
+
 ### Memoery
+
+#### Design
+
+- [Gorilla: A Fast, Scalable, In-Memory Time Series Database](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf)
+
+#### Databases
 
 ## Monitoring solutions
 

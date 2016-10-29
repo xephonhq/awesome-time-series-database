@@ -14,7 +14,7 @@ KairosDB:
 
 Heroic:
   url: https://spotify.github.io/heroic/
-  description: A scalable time series database based on Bigtable, Cassandra, and Elasticsearch
+  description: Scalable time series database based on Bigtable, Cassandra, and Elasticsearch
   language: java
   backends:
     - Cassandra

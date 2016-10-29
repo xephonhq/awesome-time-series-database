@@ -4,30 +4,43 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 ## Contents
 
-- [Time series databases](#time-series-databases)
+- [Databases](#databases)
+- [Backends](#backends)
 {{! http://stackoverflow.com/questions/9058774/handlebars-mustache-is-there-a-built-in-way-to-loop-through-the-properties-of }}
 {{#each backends}}
   - [{{@key}}]({{toRef @key}})
 {{/each}}
 - [Monitoring solutions](#monitoring-solutions)
 
-## Time series databases
+## Databases
 
-NOTE: some databases have multiple backends, they are grouped by their default backend.
+
+{{! we can write the template directly?}}
+{{#each databases}}
+
+### {{@key}}
+
+[{{@key}}]({{this.url}}) is a {{this.description}}
+
+{{#if this.language}}
+- Language: {{this.language}}
+{{/if}}
+
+{{/each}}
+
+## Backends
+
+<!-- NOTE: some databases have multiple backends, they are grouped by their default backend. -->
 
 {{#each backends}}
 ### {{@key}}
+
+Databases: {{#each databases}}[{{this}}]({{toRef this}}){{#unless @last}}, {{/unless}}{{/each}}
 
 #### Design
 
 {{#each links}}
 - [{{@key}}]({{this}})
-{{/each}}
-
-#### Databases
-
-{{#each databases}}
-{{db this}}
 {{/each}}
 
 {{/each}}

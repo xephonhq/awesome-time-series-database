@@ -23,28 +23,6 @@ let toRef = function(name) {
   return '#' + name.replace(/\s+/g, '-').toLowerCase();
 }
 hb.registerHelper('toRef', toRef);
-hb.registerHelper('db', function(dbName){
-  let db = databases[dbName];
-  if (db == undefined) {
-    console.error(dbName, 'is not defined!');
-    return '';
-  }
-  let head = '';
-  let language = ';'
-  let backends = '';
-  let links = '';
-  head = `- [${dbName}](${db.url}) ${db.description}`;
-  if (typeof db.language == 'string') {
-    language = '\n  - Language: ' + db.language;
-  }
-  if (typeof db.backends == 'object') {
-    backends = '\n  - Backends: ' + _.map(db.backends, function(b){return `[${b}](${toRef(b)})`}).join(', ');
-  }
-  if (typeof db.links == 'object') {
-    links = '\n' + _.map(db.links, function(url, name){return `  - [${name}](${url})`}).join('\n');
-  }
-  return head + language + backends + links;
-});
 
 // Render and writ to file
 let tmpl = hb.compile(fs.readFileSync('README.tmpl', 'utf-8'));

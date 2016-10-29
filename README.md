@@ -1,5 +1,5 @@
 <!-- NOTE: this md file is generated, please don't modify the file directly -->
-# awesome-time-series-database
+# Awesome time-series database [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 A curated list of awesome time series databases, benchmark tools, blog and published papers
 
 ## Contents
@@ -12,7 +12,8 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
   - [Bigtable](#bigtable)
   - [Ceph](#ceph)
   - [Memoery](#memoery)
-- [Monitoring solutions](#monitoring-solutions)
+- [Reading](#reading)
+- [Monitoring](#monitoring)
 
 ## Databases
 
@@ -47,8 +48,6 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 - [BTrDB: Optimizing Storage System Design for Timeseries Processing](https://www.usenix.org/system/files/conference/fast16/fast16-papers-andersen.pdf)
 
 ## Backends
-
-<!-- NOTE: some databases have multiple backends, they are grouped by their default backend. -->
 
 ### HBase
 
@@ -97,7 +96,20 @@ Databases:
 
 - [Gorilla: A Fast, Scalable, In-Memory Time Series Database](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf)
 
-## Monitoring solutions
+## Reading
+
+### Survey
+
+- [In Search of Agile Time Series Database](https://taowen.gitbooks.io/tsdb/content/)
+    
+### Database
+
+## Monitoring
+
+## Acknowlegement
+
+- [awesome big data](https://github.com/onurakpolat/awesome-bigdata#time-series-databases)
+- [awesome db](https://github.com/numetriclabz/awesome-db)
 
 ## License
 

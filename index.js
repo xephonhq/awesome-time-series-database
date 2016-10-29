@@ -6,21 +6,23 @@ const yaml = require('js-yaml');
 const hb = require('handlebars');
 
 // TODO: migrate code from https://github.com/tongquhq/about/blob/master/lib/config/parser.js to support $ref in yaml
-const backends = yaml.safeLoad(fs.readFileSync('backend.yml','utf-8'));
-const databases = yaml.safeLoad(fs.readFileSync('database.yml','utf-8'));
+const backends = yaml.safeLoad(fs.readFileSync('backend.yml', 'utf-8'));
+const databases = yaml.safeLoad(fs.readFileSync('database.yml', 'utf-8'));
+const readings = yaml.safeLoad(fs.readFileSync('reading.yml', 'utf-8'));
 
 // console.log(backends);
 // console.log(databases);
 
 const data = {
-  backends: backends,
-  databases: databases
+    backends: backends,
+    databases: databases,
+    readings: readings
 };
 
 // Handlerbars helpers
 let toRef = (name) => {
-  // http://stackoverflow.com/questions/1983648/replace-space-with-dash-and-make-all-letters-lower-case-using-javascript
-  return '#' + name.replace(/\s+/g, '-').toLowerCase();
+    // http://stackoverflow.com/questions/1983648/replace-space-with-dash-and-make-all-letters-lower-case-using-javascript
+    return '#' + name.replace(/\s+/g, '-').toLowerCase();
 };
 hb.registerHelper('toRef', toRef);
 

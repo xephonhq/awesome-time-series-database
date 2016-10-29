@@ -1,5 +1,5 @@
 <!-- NOTE: this md file is generated, please don't modify the file directly -->
-# awesome-time-series-database
+# Awesome time-series database [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 A curated list of awesome time series databases, benchmark tools, blog and published papers
 
 ## Contents
@@ -10,7 +10,8 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 {{#each backends}}
   - [{{@key}}]({{toRef @key}})
 {{/each}}
-- [Monitoring solutions](#monitoring-solutions)
+- [Reading](#reading)
+- [Monitoring](#monitoring)
 
 ## Databases
 
@@ -37,8 +38,6 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 ## Backends
 
-<!-- NOTE: some databases have multiple backends, they are grouped by their default backend. -->
-
 {{#each backends}}
 ### {{@key}}
 
@@ -52,9 +51,23 @@ Databases: {{#each databases}}[{{this}}]({{toRef this}}){{#unless @last}}, {{/un
 
 {{/each}}
 
-## Monitoring solutions
+## Reading
 
+{{#each readings}}
+### {{@key}}
 
+{{#each this}}
+- [{{@key}}]({{this}})
+
+{{/each}}
+{{/each}}
+
+## Monitoring
+
+## Acknowlegement
+
+- [awesome big data](https://github.com/onurakpolat/awesome-bigdata#time-series-databases)
+- [awesome db](https://github.com/numetriclabz/awesome-db)
 
 ## License
 

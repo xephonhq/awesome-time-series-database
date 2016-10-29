@@ -4,61 +4,79 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 ## Contents
 
-- [Time series databases](#time-series-databases)
+- [Databases](#databases)
+- [Backends](#backends)
   - [HBase](#hbase)
   - [Cassandra](#cassandra)
+  - [Elasticsearch](#elasticsearch)
   - [Bigtable](#bigtable)
   - [Memoery](#memoery)
 - [Monitoring solutions](#monitoring-solutions)
 
-## Time series databases
+## Databases
 
-NOTE: some databases have multiple backends, they are grouped by their default backend.
+### OpenTSDB
+
+[OpenTSDB](http://opentsdb.net/) is a Classical time series database on top of HBase. Now support Cassandra and Bigtable.
+
+- Language: java
+
+### KairosDB
+
+[KairosDB](https://kairosdb.github.io/) is a Fast Time Series Database on Cassandra
+
+- Language: java
+
+### Heroic
+
+[Heroic](https://spotify.github.io/heroic/) is a Scalable time series database based on Bigtable, Cassandra, and Elasticsearch
+
+- Language: java
+
+## Backends
+
+<!-- NOTE: some databases have multiple backends, they are grouped by their default backend. -->
 
 ### HBase
+
+Databases: [OpenTSDB](#opentsdb)
 
 #### Design
 
 - [HBase in Action (Manning Publications) - Chapter 7: HBase by Example: OpenTSDB](http://www.manning.com/dimidukkhurana/)
 
-#### Databases
-
-- [OpenTSDB](http://opentsdb.net/) Classical time series database on top of HBase. Now support Cassandra and Bigtable.
-  - Language: java
-  - Backends: [HBase](#hbase)
-
 ### Cassandra
+
+Databases: [KairosDB](#kairosdb), [Heroic](#heroic)
 
 #### Design
 
 - [Basic Time Series with Cassandra](http://www.rubyscale.com/post/143067470585/basic-time-series-with-cassandra)
 - [Advanced Time Series with Cassandra](http://www.datastax.com/dev/blog/advanced-time-series-with-cassandra)
 
-#### Databases
+### Elasticsearch
 
-- [KairosDB](https://kairosdb.github.io/) Fast Time Series Database on Cassandra
-  - Language: java
-  - Backends: [Cassandra](#cassandra)
-- [Heroic](https://spotify.github.io/heroic/) A scalable time series database based on Bigtable, Cassandra, and Elasticsearch
-  - Language: java
-  - Backends: [Cassandra](#cassandra), [HBase](#hbase), [Bigtable](#bigtable)
-  - [Monitoring at Spotify - Introducing Heroic](https://labs.spotify.com/2015/11/17/monitoring-at-spotify-introducing-heroic/)
+Databases: 
+
+#### Design
+
+- [Timelion: The time series composer for Kibana](https://www.elastic.co/blog/timelion-timeline)
 
 ### Bigtable
+
+Databases: 
 
 #### Design
 
 - [Cloud Bigtable Schema Design for Time Series Data](https://cloud.google.com/bigtable/docs/schema-design-time-series)
 
-#### Databases
-
 ### Memoery
+
+Databases: 
 
 #### Design
 
 - [Gorilla: A Fast, Scalable, In-Memory Time Series Database](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf)
-
-#### Databases
 
 ## Monitoring solutions
 

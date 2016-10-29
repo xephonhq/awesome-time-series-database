@@ -28,7 +28,11 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 {{#if this.backends}}
 - Backends: {{#each this.backends}}[{{this}}]({{toRef this}}){{#unless @last}}, {{/unless}}{{/each}}
 {{/if}}
-
+{{#if this.links}}
+{{#each this.links}}
+- [{{@key}}]({{this}})
+{{/each}}
+{{/if}}
 {{/each}}
 
 ## Backends

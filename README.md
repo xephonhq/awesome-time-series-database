@@ -36,6 +36,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 - Language: java
 - Backends: [Cassandra](#cassandra), [HBase](#hbase), [Bigtable](#bigtable)
+- [Monitoring at Spotify - Introducing Heroic](https://labs.spotify.com/2015/11/17/monitoring-at-spotify-introducing-heroic/)
 
 ### BTrDB
 
@@ -43,6 +44,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 - Language: Go
 - Backends: [Ceph](#ceph)
+- [BTrDB: Optimizing Storage System Design for Timeseries Processing](https://www.usenix.org/system/files/conference/fast16/fast16-papers-andersen.pdf)
 
 ## Backends
 

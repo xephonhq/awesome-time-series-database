@@ -10,7 +10,7 @@ const backends = yaml.safeLoad(fs.readFileSync('backend.yml','utf-8'));
 const databases = yaml.safeLoad(fs.readFileSync('database.yml','utf-8'));
 
 // console.log(backends);
-console.log(databases);
+// console.log(databases);
 
 const data = {
   backends: backends,

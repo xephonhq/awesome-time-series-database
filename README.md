@@ -10,6 +10,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
   - [Cassandra](#cassandra)
   - [Elasticsearch](#elasticsearch)
   - [Bigtable](#bigtable)
+  - [Ceph](#ceph)
   - [Memoery](#memoery)
 - [Monitoring solutions](#monitoring-solutions)
 
@@ -20,18 +21,28 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 [OpenTSDB](http://opentsdb.net/) is a Classical time series database on top of HBase. Now support Cassandra and Bigtable.
 
 - Language: java
+- Backends: [HBase](#hbase)
 
 ### KairosDB
 
 [KairosDB](https://kairosdb.github.io/) is a Fast Time Series Database on Cassandra
 
 - Language: java
+- Backends: [Cassandra](#cassandra)
 
 ### Heroic
 
 [Heroic](https://spotify.github.io/heroic/) is a Scalable time series database based on Bigtable, Cassandra, and Elasticsearch
 
 - Language: java
+- Backends: [Cassandra](#cassandra), [HBase](#hbase), [Bigtable](#bigtable)
+
+### BTrDB
+
+[BTrDB](https://github.com/SoftwareDefinedBuildings/btrdb) (Berkeley Tree Database) is a High performance time series database designed to support high density data storage applications.
+
+- Language: Go
+- Backends: [Ceph](#ceph)
 
 ## Backends
 
@@ -69,6 +80,12 @@ Databases:
 #### Design
 
 - [Cloud Bigtable Schema Design for Time Series Data](https://cloud.google.com/bigtable/docs/schema-design-time-series)
+
+### Ceph
+
+Databases: [BTrDB](#btrdb)
+
+#### Design
 
 ### Memoery
 

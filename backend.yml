@@ -26,6 +26,11 @@ Bigtable:
   links:
     "Cloud Bigtable Schema Design for Time Series Data": https://cloud.google.com/bigtable/docs/schema-design-time-series
 
+Ceph:
+  url: http://ceph.com/
+  databases:
+    - BTrDB
+
 Memoery:
   url: N/A
   links:

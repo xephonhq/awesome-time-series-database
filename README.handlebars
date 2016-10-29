@@ -20,10 +20,13 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 ### {{@key}}
 
-[{{@key}}]({{this.url}}) is a {{this.description}}
+[{{@key}}]({{this.url}}){{#if this.aka}} ({{this.aka}}){{/if}} is a {{this.description}}
 
 {{#if this.language}}
 - Language: {{this.language}}
+{{/if}}
+{{#if this.backends}}
+- Backends: {{#each this.backends}}[{{this}}]({{toRef this}}){{#unless @last}}, {{/unless}}{{/each}}
 {{/if}}
 
 {{/each}}

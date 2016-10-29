@@ -18,10 +18,10 @@ const data = {
 };
 
 // Handlerbars helpers
-let toRef = function(name) {
+let toRef = (name) => {
   // http://stackoverflow.com/questions/1983648/replace-space-with-dash-and-make-all-letters-lower-case-using-javascript
   return '#' + name.replace(/\s+/g, '-').toLowerCase();
-}
+};
 hb.registerHelper('toRef', toRef);
 
 // Render and writ to file
@@ -29,8 +29,5 @@ let tmpl = hb.compile(fs.readFileSync('README.handlebars', 'utf-8'));
 // FIXME: the template gnerated extra line breaks
 // http://stackoverflow.com/questions/10965433/regex-replace-multi-line-breaks-with-single-in-javascript
 let out = tmpl(data).replace(/\n\s*\n\s*\n/g, '\n\n');
-
-
-
 console.log(out);
 fs.writeFileSync('README.md', out);

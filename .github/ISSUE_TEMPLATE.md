@@ -1,4 +1,7 @@
-<!-- Please specify the type of reaction -->
+<!-- Please specify your purpose -->
+<!-- Use a title like following  -->
+<!-- [add][database][InfluxDB] -->
+<!-- [update][database][Graphite] -->
 
 ## Type of action
 

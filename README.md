@@ -12,6 +12,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
   - [Bigtable](#bigtable)
   - [Ceph](#ceph)
   - [Memoery](#memoery)
+  - [Custom](#custom)
 - [Reading](#reading)
 - [Monitoring](#monitoring)
 
@@ -46,6 +47,21 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 - Language: Go
 - Backends: [Ceph](#ceph)
 - [BTrDB: Optimizing Storage System Design for Timeseries Processing](https://www.usenix.org/system/files/conference/fast16/fast16-papers-andersen.pdf)
+
+### Vaultaire
+
+[Vaultaire](https://github.com/afcowie/vaultaire) is a data vault for system metrics, backed onto Ceph
+
+- Language: Haskell
+- Backends: [Ceph](#ceph)
+- [Design and compare vaulataire with other time series database](http://www.anchor.com.au/blog/2014/06/vaultaire-ceph-based-immutable-tsdb/)
+
+### InfluxDB
+
+[InfluxDB](https://www.influxdata.com/time-series-platform/influxdb/) is a Scalable datastore for metrics, events, and real-time analytics https://influxdata.com
+
+- Language: Go
+- Backends: [Custom](#custom)
 
 ## Backends
 
@@ -84,7 +100,7 @@ Databases:
 
 ### Ceph
 
-Databases: [BTrDB](#btrdb)
+Databases: [BTrDB](#btrdb), [Vaultaire](#vaultaire)
 
 #### Design
 
@@ -96,12 +112,18 @@ Databases:
 
 - [Gorilla: A Fast, Scalable, In-Memory Time Series Database](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf)
 
+### Custom
+
+Databases: [InfluxDB](#influxdb)
+
+#### Design
+
 ## Reading
 
 ### Survey
 
 - [In Search of Agile Time Series Database](https://taowen.gitbooks.io/tsdb/content/)
-    
+
 ### Database
 
 ## Monitoring

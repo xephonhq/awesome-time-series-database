@@ -9,14 +9,17 @@ const hb = require('handlebars');
 const backends = yaml.safeLoad(fs.readFileSync('backend.yml', 'utf-8'));
 const databases = yaml.safeLoad(fs.readFileSync('database.yml', 'utf-8'));
 const readings = yaml.safeLoad(fs.readFileSync('reading.yml', 'utf-8'));
+const benchmarks = yaml.safeLoad(fs.readFileSync('benchmark.yml', 'utf-8'));
 
 // console.log(backends);
 // console.log(databases);
+console.log(benchmarks);
 
 const data = {
     backends: backends,
     databases: databases,
-    readings: readings
+    readings: readings,
+    benchmarks: benchmarks
 };
 
 // Handlerbars helpers

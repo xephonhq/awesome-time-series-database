@@ -63,6 +63,13 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 - Language: Go
 - Backends: [Custom](#custom)
 
+### Beringei
+
+[Beringei](https://github.com/facebookincubator/beringei) is a A high performance, in memory time series storage engine
+
+- Language: C++
+- Backends: [Memory](#memory)
+
 ## Backends
 
 ### HBase
@@ -106,7 +113,7 @@ Databases: [BTrDB](#btrdb), [Vaultaire](#vaultaire)
 
 ### Memoery
 
-Databases: 
+Databases: [Beringei](#beringei)
 
 #### Design
 

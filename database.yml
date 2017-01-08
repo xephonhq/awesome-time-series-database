@@ -49,3 +49,10 @@ InfluxDB:
   backends:
     # TODO: list TSM RRD etc
     - Custom
+
+Beringei:
+  url: https://github.com/facebookincubator/beringei
+  description: A high performance, in memory time series storage engine
+  language: C++
+  backends:
+    - Memory

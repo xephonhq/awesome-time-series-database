@@ -85,3 +85,10 @@ Blueflood:
     - Cassandra
     # TODO: Elasticsearch is used for indexing
     - Elasticsearch
+
+Newts:
+  url: https://github.com/OpenNMS/newts
+  description: a time-series data store support searching metadata
+  language: Java
+  backends:
+    - Cassandra

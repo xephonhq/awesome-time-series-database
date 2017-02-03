@@ -91,6 +91,13 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 - Language: Java
 - Backends: [Cassandra](#cassandra), [Elasticsearch](#elasticsearch)
 
+### Newts
+
+[Newts](https://github.com/OpenNMS/newts) is a a time-series data store support searching metadata
+
+- Language: Java
+- Backends: [Cassandra](#cassandra)
+
 ## Backends
 
 ### HBase
@@ -103,7 +110,7 @@ Databases: [OpenTSDB](#opentsdb), [Heroic](#heroic)
 
 ### Cassandra
 
-Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb), [Khronus](#khronus), [Hawkular Metrics](#hawkular-metrics), [Blueflood](#blueflood)
+Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb), [Khronus](#khronus), [Hawkular Metrics](#hawkular-metrics), [Blueflood](#blueflood), [Newts](#newts)
 
 #### Design
 
@@ -161,6 +168,7 @@ Databases: [InfluxDB](#influxdb)
 ## Acknowlegement
 
 - [awesome big data](https://github.com/onurakpolat/awesome-bigdata#time-series-databases)
+- [List of Time Series Databases](https://misfra.me/2016/04/09/tsdb-list/) by [Preetam Jinka](https://twitter.com/PreetamJinka)
 - [awesome db](https://github.com/numetriclabz/awesome-db)
 
 ## License

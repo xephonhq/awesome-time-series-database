@@ -23,6 +23,7 @@ Cassandra:
     - Khronus
     - Hawkular Metrics
     - Blueflood
+    - Newts
 
 Elasticsearch:
   url: https://www.elastic.co/

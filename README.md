@@ -23,7 +23,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 [OpenTSDB](http://opentsdb.net/) is a Classical time series database on top of HBase. Now support Cassandra and Bigtable.
 
 - Language: java
-- Backends: [HBase](#hbase)
+- Backends: [HBase](#hbase), [Bigtable](#bigtable), [Cassandra](#cassandra)
 
 ### KairosDB
 
@@ -74,7 +74,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 ### HBase
 
-Databases: [OpenTSDB](#opentsdb)
+Databases: [OpenTSDB](#opentsdb), [Heroic](#heroic)
 
 #### Design
 
@@ -82,7 +82,7 @@ Databases: [OpenTSDB](#opentsdb)
 
 ### Cassandra
 
-Databases: [KairosDB](#kairosdb), [Heroic](#heroic)
+Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb)
 
 #### Design
 
@@ -99,7 +99,7 @@ Databases:
 
 ### Bigtable
 
-Databases: 
+Databases: [Heroic](#heroic), [OpenTSDB](#opentsdb)
 
 #### Design
 

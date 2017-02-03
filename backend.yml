@@ -6,6 +6,7 @@ HBase:
     "HBase in Action (Manning Publications) - Chapter 7: HBase by Example: OpenTSDB": http://www.manning.com/dimidukkhurana/
   databases:
     - OpenTSDB
+    - Heroic
 
 Cassandra:
   url: http://cassandra.apache.org/
@@ -15,6 +16,7 @@ Cassandra:
   databases:
     - KairosDB
     - Heroic
+    - OpenTSDB
 
 Elasticsearch:
   url: https://www.elastic.co/
@@ -25,6 +27,9 @@ Bigtable:
   url: https://cloud.google.com/bigtable/
   links:
     "Cloud Bigtable Schema Design for Time Series Data": https://cloud.google.com/bigtable/docs/schema-design-time-series
+  databases:
+    - Heroic
+    - OpenTSDB
 
 Ceph:
   url: http://ceph.com/

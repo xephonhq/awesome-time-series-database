@@ -4,6 +4,9 @@ OpenTSDB:
   language: java
   backends:
     - HBase
+    # Bigtable and Cassandra supported added in https://github.com/OpenTSDB/opentsdb/releases/tag/v2.3.0RC1
+    - Bigtable
+    - Cassandra
 
 KairosDB:
   url: https://kairosdb.github.io/

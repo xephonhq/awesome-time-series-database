@@ -22,21 +22,21 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 [OpenTSDB](http://opentsdb.net/) is a Classical time series database on top of HBase. Now support Cassandra and Bigtable.
 
-- Language: java
+- Language: Java
 - Backends: [HBase](#hbase), [Bigtable](#bigtable), [Cassandra](#cassandra)
 
 ### KairosDB
 
 [KairosDB](https://kairosdb.github.io/) is a Fast Time Series Database on Cassandra
 
-- Language: java
+- Language: Java
 - Backends: [Cassandra](#cassandra)
 
 ### Heroic
 
 [Heroic](https://spotify.github.io/heroic/) is a Scalable time series database based on Bigtable, Cassandra, and Elasticsearch
 
-- Language: java
+- Language: Java
 - Backends: [Cassandra](#cassandra), [HBase](#hbase), [Bigtable](#bigtable)
 - [Monitoring at Spotify - Introducing Heroic](https://labs.spotify.com/2015/11/17/monitoring-at-spotify-introducing-heroic/)
 
@@ -77,6 +77,13 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 - Language: Scala
 - Backends: [Cassandra](#cassandra)
 
+### Hawkular Metrics
+
+[Hawkular Metrics](https://github.com/hawkular/hawkular-metrics) is a storage engine for metric data using Cassandra
+
+- Language: Java
+- Backends: [Cassandra](#cassandra)
+
 ## Backends
 
 ### HBase
@@ -89,7 +96,7 @@ Databases: [OpenTSDB](#opentsdb), [Heroic](#heroic)
 
 ### Cassandra
 
-Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb), [Khronus](#khronus)
+Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb), [Khronus](#khronus), [Hawkular Metrics](#hawkular-metrics)
 
 #### Design
 

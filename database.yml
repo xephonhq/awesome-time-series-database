@@ -1,7 +1,7 @@
 OpenTSDB:
   url: http://opentsdb.net/
   description:  Classical time series database on top of HBase. Now support Cassandra and Bigtable.
-  language: java
+  language: Java
   backends:
     - HBase
     # Bigtable and Cassandra supported added in https://github.com/OpenTSDB/opentsdb/releases/tag/v2.3.0RC1
@@ -11,14 +11,14 @@ OpenTSDB:
 KairosDB:
   url: https://kairosdb.github.io/
   description: Fast Time Series Database on Cassandra
-  language: java
+  language: Java
   backends:
     - Cassandra
 
 Heroic:
   url: https://spotify.github.io/heroic/
   description: Scalable time series database based on Bigtable, Cassandra, and Elasticsearch
-  language: java
+  language: Java
   backends:
     - Cassandra
     - HBase
@@ -66,3 +66,12 @@ Khronus:
   language: Scala
   backends:
     - Cassandra
+
+"Hawkular Metrics":
+  url: https://github.com/hawkular/hawkular-metrics
+  description: storage engine for metric data using Cassandra
+  language: Java
+  backends:
+    - Cassandra
+  # schema
+  # https://github.com/hawkular/hawkular-metrics/blob/master/core/schema/src/main/resources/org/hawkular/schema/bootstrap.groovy

@@ -18,6 +18,7 @@ Cassandra:
     - Heroic
     - OpenTSDB
     - Khronus
+    - Hawkular Metrics
 
 Elasticsearch:
   url: https://www.elastic.co/

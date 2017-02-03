@@ -37,7 +37,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 [Heroic](https://spotify.github.io/heroic/) is a Scalable time series database based on Bigtable, Cassandra, and Elasticsearch
 
 - Language: Java
-- Backends: [Cassandra](#cassandra), [HBase](#hbase), [Bigtable](#bigtable)
+- Backends: [Cassandra](#cassandra), [HBase](#hbase), [Bigtable](#bigtable), [Elasticsearch](#elasticsearch)
 - [Monitoring at Spotify - Introducing Heroic](https://labs.spotify.com/2015/11/17/monitoring-at-spotify-introducing-heroic/)
 
 ### BTrDB
@@ -84,6 +84,13 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 - Language: Java
 - Backends: [Cassandra](#cassandra)
 
+### Blueflood
+
+[Blueflood](https://github.com/rackerlabs/blueflood) is a distributed system designed to ingest and process time series data built by rackspace
+
+- Language: Java
+- Backends: [Cassandra](#cassandra), [Elasticsearch](#elasticsearch)
+
 ## Backends
 
 ### HBase
@@ -96,7 +103,7 @@ Databases: [OpenTSDB](#opentsdb), [Heroic](#heroic)
 
 ### Cassandra
 
-Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb), [Khronus](#khronus), [Hawkular Metrics](#hawkular-metrics)
+Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb), [Khronus](#khronus), [Hawkular Metrics](#hawkular-metrics), [Blueflood](#blueflood)
 
 #### Design
 
@@ -105,7 +112,7 @@ Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb), [Khr
 
 ### Elasticsearch
 
-Databases: 
+Databases: [Heroic](#heroic), [Blueflood](#blueflood)
 
 #### Design
 

@@ -23,6 +23,7 @@ Heroic:
     - Cassandra
     - HBase
     - Bigtable
+    - Elasticsearch
   links:
     "Monitoring at Spotify - Introducing Heroic": https://labs.spotify.com/2015/11/17/monitoring-at-spotify-introducing-heroic/
 
@@ -75,3 +76,12 @@ Khronus:
     - Cassandra
   # schema
   # https://github.com/hawkular/hawkular-metrics/blob/master/core/schema/src/main/resources/org/hawkular/schema/bootstrap.groovy
+
+Blueflood:
+  url: https://github.com/rackerlabs/blueflood
+  description: distributed system designed to ingest and process time series data built by rackspace
+  language: Java
+  backends:
+    - Cassandra
+    # TODO: Elasticsearch is used for indexing
+    - Elasticsearch

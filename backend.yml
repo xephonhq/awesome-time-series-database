@@ -19,11 +19,16 @@ Cassandra:
     - OpenTSDB
     - Khronus
     - Hawkular Metrics
+    - Blueflood
 
 Elasticsearch:
   url: https://www.elastic.co/
   links:
     "Timelion: The time series composer for Kibana": https://www.elastic.co/blog/timelion-timeline
+  databases:
+    # TODO: they both use Elasticsearch for indexing (only?)
+    - Heroic
+    - Blueflood
 
 Bigtable:
   url: https://cloud.google.com/bigtable/

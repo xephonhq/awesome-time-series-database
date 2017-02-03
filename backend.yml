@@ -17,6 +17,7 @@ Cassandra:
     - KairosDB
     - Heroic
     - OpenTSDB
+    - Khronus
 
 Elasticsearch:
   url: https://www.elastic.co/

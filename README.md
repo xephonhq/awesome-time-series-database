@@ -70,6 +70,13 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 - Language: C++
 - Backends: [Memory](#memory)
 
+### Khronus
+
+[Khronus](https://github.com/Searchlight/khronus) is a distributed and reactive time series database designed to store, retrieve, analyze and process a large amount of custom metrics
+
+- Language: Scala
+- Backends: [Cassandra](#cassandra)
+
 ## Backends
 
 ### HBase
@@ -82,7 +89,7 @@ Databases: [OpenTSDB](#opentsdb), [Heroic](#heroic)
 
 ### Cassandra
 
-Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb)
+Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb), [Khronus](#khronus)
 
 #### Design
 

@@ -59,3 +59,10 @@ Beringei:
   language: C++
   backends:
     - Memory
+
+Khronus:
+  url: https://github.com/Searchlight/khronus
+  description: distributed and reactive time series database designed to store, retrieve, analyze and process a large amount of custom metrics
+  language: Scala
+  backends:
+    - Cassandra

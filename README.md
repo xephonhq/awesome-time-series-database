@@ -62,6 +62,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 - Language: Go
 - Backends: [Custom](#custom)
+- [InfluxDB Markedly Outperforms OpenTSDB in Time-Series Data &amp; Metrics Benchmark](https://influxdata.com/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/)
 
 ### Beringei
 
@@ -97,6 +98,14 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 - Language: Java
 - Backends: [Cassandra](#cassandra)
+
+### Akumuli
+
+[Akumuli](https://github.com/akumuli/Akumuli) is a a numeric time series database that can be used to capture, store and process time-series data in real-time.
+
+- Language: C++
+- Backends: [Custom](#custom)
+- [Akumuli Markedly Outperforms InfluxDB in Time-Series Data &amp; Metrics Benchmark](http://akumuli.org/akumuli/2017/01/24/benchmark/)
 
 ## Backends
 
@@ -151,7 +160,7 @@ Databases: [Beringei](#beringei)
 
 ### Custom
 
-Databases: [InfluxDB](#influxdb)
+Databases: [InfluxDB](#influxdb), [Akumuli](#akumuli)
 
 #### Design
 
@@ -160,6 +169,8 @@ Databases: [InfluxDB](#influxdb)
 ### Survey
 
 - [In Search of Agile Time Series Database](https://taowen.gitbooks.io/tsdb/content/)
+
+- [Survey on TSDBs that use Cassandra as backend](https://github.com/xephonhq/xephon-k/tree/master/survey)
 
 ### Database
 

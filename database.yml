@@ -53,6 +53,8 @@ InfluxDB:
   backends:
     # TODO: list TSM RRD etc
     - Custom
+  links:
+    "InfluxDB Markedly Outperforms OpenTSDB in Time-Series Data & Metrics Benchmark": https://influxdata.com/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/
 
 Beringei:
   url: https://github.com/facebookincubator/beringei
@@ -92,3 +94,14 @@ Newts:
   language: Java
   backends:
     - Cassandra
+
+Akumuli:
+  url: https://github.com/akumuli/Akumuli
+  description: a numeric time series database that can be used to capture, store and process time-series data in real-time.
+  language: C++
+  backends:
+    # TODO: LSM (B+) Tree
+    - Custom
+  links:
+    # the title is same as Infux's lol
+    "Akumuli Markedly Outperforms InfluxDB in Time-Series Data & Metrics Benchmark": http://akumuli.org/akumuli/2017/01/24/benchmark/

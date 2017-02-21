@@ -4,16 +4,57 @@ const fs = require('fs');
 const _ = require('lodash');
 const yaml = require('js-yaml');
 const hb = require('handlebars');
+const winston = require('winston');
+const log = new winston.Logger({
+    transports: [
+        new winston.transports.Console({
+            level: "debug",
+            colorize: true
+        })
+    ]
+});
 
 // TODO: migrate code from https://github.com/tongquhq/about/blob/master/lib/config/parser.js to support $ref in yaml
+const meta = yaml.safeLoad(fs.readFileSync('meta.yml', 'utf-8'));
+const tags = meta.tags;
+const languages = meta.languages;
 const backends = yaml.safeLoad(fs.readFileSync('backend.yml', 'utf-8'));
 const databases = yaml.safeLoad(fs.readFileSync('database.yml', 'utf-8'));
 const readings = yaml.safeLoad(fs.readFileSync('reading.yml', 'utf-8'));
 const benchmarks = yaml.safeLoad(fs.readFileSync('benchmark.yml', 'utf-8'));
 
+// console.log(meta);
 // console.log(backends);
 // console.log(databases);
-console.log(benchmarks);
+// console.log(benchmarks);
+
+// lint
+_.forIn(databases, function (db, dbName) {
+    // language
+    if (!_.includes(languages, db.language)) {
+        log.warn('Language ' + db.language + ' is not registered for ' + dbName);
+    }
+    // backends
+    _.forEach(db.backends, function (backend) {
+        // check if the backend exists
+        if (!_.has(backends, backend)){
+            log.warn('Backend ' + backend + ' is not registered for ' + dbName);
+            return;
+        }
+        // check if this database is added to the backend
+        if (!_.includes(backends[backend].databases, dbName)) {
+            log.warn('Database ' + dbName + ' is not registered for backend ' + backend);
+        }
+    });
+    // tag
+    _.forEach(db.tags, function (tag) {
+        if(!_.includes(tags, tag)) {
+            log.warn('Tag ' + tag + ' is not registered for ' + dbName);
+        }
+    });
+});
+log.info('All check passed! \\w/');
+// TODO: copy language and backends to tags
 
 const data = {
     backends: backends,
@@ -34,5 +75,6 @@ let tmpl = hb.compile(fs.readFileSync('README.handlebars', 'utf-8'));
 // FIXME: the template gnerated extra line breaks
 // http://stackoverflow.com/questions/10965433/regex-replace-multi-line-breaks-with-single-in-javascript
 let out = tmpl(data).replace(/\n\s*\n\s*\n/g, '\n\n');
-console.log(out);
 fs.writeFileSync('README.md', out);
+// console.log(out);
+log.info('README.md updated! /w\\');

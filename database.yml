@@ -1,3 +1,5 @@
+# database list
+
 OpenTSDB:
   url: http://opentsdb.net/
   description:  Classical time series database on top of HBase. Now support Cassandra and Bigtable.
@@ -53,6 +55,8 @@ InfluxDB:
   backends:
     # TODO: list TSM RRD etc
     - Custom
+  tags:
+    - LSM Tree
   links:
     "InfluxDB Markedly Outperforms OpenTSDB in Time-Series Data & Metrics Benchmark": https://influxdata.com/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/
 
@@ -102,6 +106,8 @@ Akumuli:
   backends:
     # TODO: LSM (B+) Tree
     - Custom
+  tags:
+    - LSM Tree
   links:
     # the title is same as Infux's lol
     "Akumuli Markedly Outperforms InfluxDB in Time-Series Data & Metrics Benchmark": http://akumuli.org/akumuli/2017/01/24/benchmark/

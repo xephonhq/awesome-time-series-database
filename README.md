@@ -11,7 +11,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
   - [Elasticsearch](#elasticsearch)
   - [Bigtable](#bigtable)
   - [Ceph](#ceph)
-  - [Memoery](#memoery)
+  - [Memory](#memory)
   - [Custom](#custom)
 - [Reading](#reading)
 - [Monitoring](#monitoring)
@@ -150,7 +150,7 @@ Databases: [BTrDB](#btrdb), [Vaultaire](#vaultaire)
 
 #### Design
 
-### Memoery
+### Memory
 
 Databases: [Beringei](#beringei)
 

@@ -62,6 +62,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 - Language: Go
 - Backends: [Custom](#custom)
+- Tags: LSM Tree
 - [InfluxDB Markedly Outperforms OpenTSDB in Time-Series Data &amp; Metrics Benchmark](https://influxdata.com/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/)
 
 ### Beringei
@@ -105,6 +106,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 - Language: C++
 - Backends: [Custom](#custom)
+- Tags: LSM Tree
 - [Akumuli Markedly Outperforms InfluxDB in Time-Series Data &amp; Metrics Benchmark](http://akumuli.org/akumuli/2017/01/24/benchmark/)
 
 ## Backends

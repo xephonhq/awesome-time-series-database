@@ -35,9 +35,10 @@ _.forIn(databases, function (db, dbName) {
         log.warn('Language ' + db.language + ' is not registered for ' + dbName);
     }
     // backends
+    // TODO: check duplicate
     _.forEach(db.backends, function (backend) {
         // check if the backend exists
-        if (!_.has(backends, backend)){
+        if (!_.has(backends, backend)) {
             log.warn('Backend ' + backend + ' is not registered for ' + dbName);
             return;
         }
@@ -47,14 +48,34 @@ _.forIn(databases, function (db, dbName) {
         }
     });
     // tag
+    // TODO: check duplicate
     _.forEach(db.tags, function (tag) {
-        if(!_.includes(tags, tag)) {
+        if (!_.includes(tags, tag)) {
             log.warn('Tag ' + tag + ' is not registered for ' + dbName);
         }
     });
 });
 log.info('All check passed! \\w/');
-// TODO: copy language and backends to tags
+
+// add language, backends to filter tags, which will be used by the web ui
+_.forIn(databases, function (db) {
+    let filterTags = [];
+    if (typeof  db.tags !== 'undefined') {
+        let filterTags = _.clone(db.tags);
+    }
+    // language
+    if (!_.includes(filterTags, db.language)) {
+        filterTags.push(db.language);
+    }
+    // backends
+    _.forEach(db.backends, function (backend) {
+        if (!_.includes(filterTags, backend)) {
+            filterTags.push(backend);
+        }
+    });
+    db.filterTags = filterTags;
+});
+
 
 const data = {
     backends: backends,

@@ -65,6 +65,14 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 - Tags: LSM Tree
 - [InfluxDB Markedly Outperforms OpenTSDB in Time-Series Data &amp; Metrics Benchmark](https://influxdata.com/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/)
 
+### Prometheus
+
+[Prometheus](https://prometheus.io/) is a systems and service monitoring system and time series database featuring pull model, alert, graph etc.
+
+- Language: Go
+- Backends: [Custom](#custom)
+- [Scaling and Federating Prometheus](https://www.robustperception.io/scaling-and-federating-prometheus/)
+
 ### Beringei
 
 [Beringei](https://github.com/facebookincubator/beringei) is a A high performance, in memory time series storage engine
@@ -162,7 +170,7 @@ Databases: [Beringei](#beringei)
 
 ### Custom
 
-Databases: [InfluxDB](#influxdb), [Akumuli](#akumuli)
+Databases: [InfluxDB](#influxdb), [Prometheus](#prometheus), [Akumuli](#akumuli)
 
 #### Design
 

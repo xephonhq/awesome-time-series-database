@@ -60,6 +60,16 @@ InfluxDB:
   links:
     "InfluxDB Markedly Outperforms OpenTSDB in Time-Series Data & Metrics Benchmark": https://influxdata.com/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/
 
+Prometheus:
+  url: https://prometheus.io/
+  description: systems and service monitoring system and time series database featuring pull model, alert, graph etc.
+  language: Go
+  backends:
+    - Custom
+  links:
+    "Scaling and Federating Prometheus": https://www.robustperception.io/scaling-and-federating-prometheus/
+# TODO: index use leveldb, storage using delta (they have three types, see https://prometheus.io/docs/operating/storage/ for detail)
+
 Beringei:
   url: https://github.com/facebookincubator/beringei
   description: A high performance, in memory time series storage engine

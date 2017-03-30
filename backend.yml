@@ -59,4 +59,5 @@ Custom:
   url: N/A
   databases:
     - InfluxDB
+    - Prometheus
     - Akumuli

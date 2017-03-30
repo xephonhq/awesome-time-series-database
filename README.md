@@ -75,9 +75,16 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 ### Beringei
 
-[Beringei](https://github.com/facebookincubator/beringei) is a A high performance, in memory time series storage engine
+[Beringei](https://github.com/facebookincubator/beringei) is a A high performance, in memory time series storage engine designed by Facebook
 
 - Language: C++
+- Backends: [Memory](#memory)
+
+### Atlas
+
+[Atlas](https://github.com/Netflix/atlas) is a In-memory dimensional time series database designed at Netflix
+
+- Language: Scala
 - Backends: [Memory](#memory)
 
 ### Khronus
@@ -162,7 +169,7 @@ Databases: [BTrDB](#btrdb), [Vaultaire](#vaultaire)
 
 ### Memory
 
-Databases: [Beringei](#beringei)
+Databases: [Beringei](#beringei), [Atlas](#atlas)
 
 #### Design
 

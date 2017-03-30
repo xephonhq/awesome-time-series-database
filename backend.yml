@@ -54,6 +54,7 @@ Memory:
     "Gorilla: A Fast, Scalable, In-Memory Time Series Database": http://www.vldb.org/pvldb/vol8/p1816-teller.pdf
   databases:
     - Beringei
+    - Atlas
 
 Custom:
   url: N/A

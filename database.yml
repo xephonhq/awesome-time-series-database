@@ -70,10 +70,18 @@ Prometheus:
     "Scaling and Federating Prometheus": https://www.robustperception.io/scaling-and-federating-prometheus/
 # TODO: index use leveldb, storage using delta (they have three types, see https://prometheus.io/docs/operating/storage/ for detail)
 
+# TODO: alias or merge with Gorilla
 Beringei:
   url: https://github.com/facebookincubator/beringei
-  description: A high performance, in memory time series storage engine
+  description: A high performance, in memory time series storage engine designed by Facebook
   language: C++
+  backends:
+    - Memory
+
+Atlas:
+  url: https://github.com/Netflix/atlas
+  description: In-memory dimensional time series database designed at Netflix
+  language: Scala
   backends:
     - Memory
 

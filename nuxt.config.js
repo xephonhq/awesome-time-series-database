@@ -14,7 +14,14 @@ module.exports = {
       }
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      // FIXME: it seems bootstrap is requested twice
+      {
+        rel: 'stylesheet',
+        href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css',
+        crossorigin: 'anonymous',
+        integrity: 'sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ'
+      }
     ]
   },
   /*
@@ -42,4 +49,4 @@ module.exports = {
   generate: {
     dir: 'docs'
   }
-};
+}

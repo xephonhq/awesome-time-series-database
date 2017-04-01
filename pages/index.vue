@@ -31,17 +31,13 @@
 </template>
 
 <script>
-  // FIXME: this would cause a 404 request by webpack
-  // both js and json would cause trouble, maybe the best way is to use axios to request the static file?
-  // but I guess axios is even bigger than the data itself
-  // see: https://github.com/nuxt/nuxt.js/issues/123
-  import tsdbs from '../data/tsdb.json';
+  import databases from '../data/databases';
   export default {
     data () {
       return {
         greeting: 'Welcome to your Vue.js app!',
-        tsdbs: tsdbs,
-        originalTsdbs: tsdbs,
+        tsdbs: databases,
+        originalTsdbs: databases,
         languages: ['Java', 'C++', 'Go', 'Scala', 'Haskell'],
         lang: 'All'
       };
@@ -49,7 +45,6 @@
     watch: {
       lang (newLang) {
         console.log('newLang', newLang);
-        console.log('tsdb', tsdbs);
         if (newLang === 'All') {
           this.tsdbs = this.originalTsdbs;
           return;

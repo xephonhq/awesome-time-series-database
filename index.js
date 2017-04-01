@@ -23,11 +23,13 @@ const databases = yaml.safeLoad(fs.readFileSync('database.yml', 'utf-8'));
 const readings = yaml.safeLoad(fs.readFileSync('reading.yml', 'utf-8'));
 const benchmarks = yaml.safeLoad(fs.readFileSync('benchmark.yml', 'utf-8'));
 
-// console.log(meta);
-// console.log(backends);
-// console.log(databases);
+console.log(meta);
+console.log(backends);
+console.log(databases);
+// fs.writeFileSync('data/databases.js', databases.toString()); // [object Object]
+// fs.writeFileSync('data/databases.js', databases.toSource());
 fs.writeFileSync('data/tsdb.json', JSON.stringify(databases));
-// console.log(benchmarks);
+console.log(benchmarks);
 
 // lint
 _.forIn(databases, function (db, dbName) {

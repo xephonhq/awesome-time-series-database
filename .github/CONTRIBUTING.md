@@ -7,7 +7,7 @@ This project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md
 
 - edit `README.md` directly
 
-## Please
+## Adding databases
 
 - use a clean title for you issue and PR, like `[add][database][InfluxDB]`
 - provide valid link. (NOTE: some paper are not free to public, you can point it to the publisher instead of a PDF file,
@@ -19,3 +19,13 @@ This project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md
 - rebase your branch if it has conflict due to other people's PR got merged before yours
 
 NOTE: you need to install `Node.JS` and run `npm install` to generate the md file
+
+## Modify the website
+
+We use [Nuxt](https://github.com/nuxt/nuxt.js) for generating the static website
+
+- have Node.js > 7.0 installed
+- `npm install`
+- run `npm run dev` and navigate to `http://localhost:3000`
+- run `node index.js` to generate new json data file from yml files
+- run `npm run generate` to generate the static website

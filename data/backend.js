@@ -42,4 +42,8 @@ const backends = {
   }
 };
 
-export default backends;
+// export default backends;
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+exports.default = backends;

@@ -31,7 +31,7 @@
 </template>
 
 <script>
-  import databases from '../data/databases';
+  import databases from '../data/database';
   export default {
     data () {
       return {

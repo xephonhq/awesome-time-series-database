@@ -14,47 +14,44 @@ const log = new winston.Logger({
   ]
 });
 
-// TODO: migrate code from https://github.com/tongquhq/about/blob/master/lib/config/parser.js to support $ref in yaml
-const meta = yaml.safeLoad(fs.readFileSync('meta.yml', 'utf-8'));
+const meta = require('./data/meta').default;
 const tags = meta.tags;
 const languages = meta.languages;
-const backends = yaml.safeLoad(fs.readFileSync('backend.yml', 'utf-8'));
-const databases = yaml.safeLoad(fs.readFileSync('database.yml', 'utf-8'));
-const readings = yaml.safeLoad(fs.readFileSync('reading.yml', 'utf-8'));
-const benchmarks = yaml.safeLoad(fs.readFileSync('benchmark.yml', 'utf-8'));
+const backends = require('./data/backend').default;
+const databases = require('./data/database').default;
+const readings = require('./data/reading').default;
+const benchmarks = require('./data/benchmark').default;
 
-console.log(meta);
-console.log(backends);
-console.log(databases);
-// fs.writeFileSync('data/databases.js', databases.toString()); // [object Object]
-// fs.writeFileSync('data/databases.js', databases.toSource());
-fs.writeFileSync('data/tsdb.json', JSON.stringify(databases));
-console.log(benchmarks);
+// console.log(meta);
+// console.log(backends);
+// console.log(databases);
+// console.log(readings);
+// console.log(benchmarks);
 
 // lint
 _.forIn(databases, function (db, dbName) {
   // language
   if (!_.includes(languages, db.language)) {
-    log.warn('Language ' + db.language + ' is not registered for ' + dbName)
+    log.warn('Language ' + db.language + ' is not registered for ' + dbName);
   }
   // backends
   // TODO: check duplicate
   _.forEach(db.backends, function (backend) {
     // check if the backend exists
     if (!_.has(backends, backend)) {
-      log.warn('Backend ' + backend + ' is not registered for ' + dbName)
+      log.warn('Backend ' + backend + ' is not registered for ' + dbName);
       return;
     }
     // check if this database is added to the backend
     if (!_.includes(backends[backend].databases, dbName)) {
-      log.warn('Database ' + dbName + ' is not registered for backend ' + backend)
+      log.warn('Database ' + dbName + ' is not registered for backend ' + backend);
     }
   });
   // tag
   // TODO: check duplicate
   _.forEach(db.tags, function (tag) {
     if (!_.includes(tags, tag)) {
-      log.warn('Tag ' + tag + ' is not registered for ' + dbName)
+      log.warn('Tag ' + tag + ' is not registered for ' + dbName);
     }
   });
 });

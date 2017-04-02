@@ -94,4 +94,9 @@ const databases = {
   }
 };
 
-export default databases;
+// export default databases;
+// http://stackoverflow.com/questions/40294870/module-exports-vs-export-default-in-node-js-and-es6
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+exports.default = databases;

@@ -1,13 +1,13 @@
 <template>
-    <div>
+    <div class="ui container">
         <h1>Awesome Time Series Database</h1>
         <div>
-            <select v-model='lang'>
+            <select v-model='lang' class="ui selection dropdown">
                 <option value='All'>All</option>
                 <option v-bind:value='lang' v-for='lang in languages'>{{ lang }}</option>
             </select>
         </div>
-        <table class='table'>
+        <table class='ui celled table'>
             <thead>
             <tr>
                 <th>Name</th>
@@ -29,6 +29,10 @@
         </table>
     </div>
 </template>
+
+<style>
+
+</style>
 
 <script>
   import databases from '../data/database';

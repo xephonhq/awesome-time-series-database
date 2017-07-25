@@ -1,25 +1,9 @@
+const hbase = require('./backend/hbase').default;
+const cassandra = require('./backend/cassandra').default;
+
 const backends = {
-  HBase: {
-    url: 'http://hbase.apache.org/',
-    links: {'HBase in Action (Manning Publications) - Chapter 7: HBase by Example: OpenTSDB': 'http://www.manning.com/dimidukkhurana/'},
-    databases: ['OpenTSDB', 'Heroic']
-  },
-  Cassandra: {
-    url: 'http://cassandra.apache.org/',
-    links: {
-      'Basic Time Series with Cassandra (2012)': 'http://www.rubyscale.com/post/143067470585/basic-time-series-with-cassandra',
-      'Advanced Time Series with Cassandra (2012)': 'http://www.datastax.com/dev/blog/advanced-time-series-with-cassandra',
-      'Metric Collection and Storage with Cassandra (2012)': 'http://www.datastax.com/dev/blog/metric-collection-and-storage-with-cassandra',
-      'Apache Cassandra for analytics: A performance and storage analysis (2016)': 'https://www.oreilly.com/ideas/apache-cassandra-for-analytics-a-performance-and-storage-analysis'
-    },
-    databases: ['KairosDB',
-      'Heroic',
-      'OpenTSDB',
-      'Khronus',
-      'Hawkular Metrics',
-      'Blueflood',
-      'Newts']
-  },
+  HBase: hbase,
+  Cassandra: cassandra,
   Elasticsearch: {
     url: 'https://www.elastic.co/',
     links: {'Timelion: The time series composer for Kibana': 'https://www.elastic.co/blog/timelion-timeline'},

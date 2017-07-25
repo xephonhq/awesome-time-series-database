@@ -1,10 +1,7 @@
+const opentsdb = require('./database/opentsdb').default;
+
 const databases = {
-  OpenTSDB: {
-    url: 'http://opentsdb.net/',
-    description: 'Classical time series database on top of HBase. Now support Cassandra and Bigtable.',
-    language: 'Java',
-    backends: ['HBase', 'Bigtable', 'Cassandra']
-  },
+  OpenTSDB: opentsdb,
   KairosDB: {
     url: 'https://kairosdb.github.io/',
     description: 'Fast Time Series Database on Cassandra',

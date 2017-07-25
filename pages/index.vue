@@ -4,21 +4,21 @@
         <div>
             <select v-model='lang' class="ui selection dropdown">
                 <option value='All'>All</option>
-                <option v-bind:value='lang' v-for='lang in languages'>{{ lang }}</option>
+                <option :value="lang" v-for="(lang, index) in languages" v-bind:key="index">{{ lang }}</option>
             </select>
         </div>
         <table class='ui celled table'>
             <thead>
             <tr>
                 <th>Name</th>
-                <th>Url</th>
+                <th>Website</th>
                 <th>Description</th>
                 <th>Language</th>
             </tr>
             </thead>
             <tbody>
-            <tr v-for='(tsdb, name) in tsdbs'>
-                <td>{{ name }}</td>
+            <tr v-for="(tsdb, name) in tsdbs" v-bind:key="name">
+                <td><nuxt-link :to="'db/' + name">{{ name }}</nuxt-link></td>
                 <td><a :href='tsdb.url' target='_blank'>
                     {{ tsdb.url }}
             </a></td>

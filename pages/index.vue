@@ -12,16 +12,26 @@
             <tr>
                 <th>Name</th>
                 <th>Website</th>
+                <th>GitHub</th>
                 <th>Description</th>
                 <th>Language</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="(tsdb, name) in tsdbs" v-bind:key="name">
-                <td><nuxt-link :to="'db/' + name">{{ name }}</nuxt-link></td>
-                <td><a :href='tsdb.url' target='_blank'>
-                    {{ tsdb.url }}
-            </a></td>
+                <td>
+                    <nuxt-link :to="'db/' + name">{{ name }}</nuxt-link>
+                </td>
+                <td>
+                    <a :href="tsdb.url" target="_blank">
+                        {{ tsdb.url }}
+                    </a>
+                </td>
+                <td>
+                    <a :href="tsdb.github" target="_blank">
+                        {{ tsdb.github }}
+                    </a>
+                </td>
                 <td>{{ tsdb.description }}</td>
                 <td>{{ tsdb.language }}</td>
             </tr>
@@ -36,6 +46,7 @@
 
 <script>
   import databases from '../data/database';
+
   export default {
     data () {
       return {

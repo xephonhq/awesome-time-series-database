@@ -1,35 +1,15 @@
 const opentsdb = require('./database/opentsdb').default;
+const kairosdb = require('./database/kairosdb').default;
+const heroic = require('./database/heroic').default;
+const btrdb = require('./database/btrdb').default;
+const vaultaire = require('./database/vaultaire').default;
 
 const databases = {
   OpenTSDB: opentsdb,
-  KairosDB: {
-    url: 'https://kairosdb.github.io/',
-    description: 'Fast Time Series Database on Cassandra',
-    language: 'Java',
-    backends: ['Cassandra']
-  },
-  Heroic: {
-    url: 'https://spotify.github.io/heroic/',
-    description: 'Scalable time series database based on Bigtable, Cassandra, and Elasticsearch',
-    language: 'Java',
-    backends: ['Cassandra', 'HBase', 'Bigtable', 'Elasticsearch'],
-    links: {'Monitoring at Spotify - Introducing Heroic': 'https://labs.spotify.com/2015/11/17/monitoring-at-spotify-introducing-heroic/'}
-  },
-  BTrDB: {
-    url: 'https://github.com/SoftwareDefinedBuildings/btrdb',
-    aka: 'Berkeley Tree Database',
-    description: 'High performance time series database designed to support high density data storage applications.',
-    language: 'Go',
-    backends: ['Ceph'],
-    links: {'BTrDB: Optimizing Storage System Design for Timeseries Processing': 'https://www.usenix.org/system/files/conference/fast16/fast16-papers-andersen.pdf'}
-  },
-  Vaultaire: {
-    url: 'https://github.com/afcowie/vaultaire',
-    description: 'data vault for system metrics, backed onto Ceph',
-    language: 'Haskell',
-    backends: ['Ceph'],
-    links: {'Design and compare vaulataire with other time series database': 'http://www.anchor.com.au/blog/2014/06/vaultaire-ceph-based-immutable-tsdb/'}
-  },
+  KairosDB: kairosdb,
+  Heroic: heroic,
+  BTrDB: btrdb,
+  Vaultaire: vaultaire,
   InfluxDB: {
     url: 'https://www.influxdata.com/time-series-platform/influxdb/',
     description: 'Scalable datastore for metrics, events, and real-time analytics https://influxdata.com',

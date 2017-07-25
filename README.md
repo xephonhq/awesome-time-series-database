@@ -43,7 +43,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 ### BTrDB
 
-[BTrDB](https://github.com/SoftwareDefinedBuildings/btrdb) (Berkeley Tree Database) is a High performance time series database designed to support high density data storage applications.
+[BTrDB](http://btrdb.io/) (Berkeley Tree Database) is a High performance time series database designed to support high density data storage applications.
 
 - Language: Go
 - Backends: [Ceph](#ceph)

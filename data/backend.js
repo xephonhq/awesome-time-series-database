@@ -4,6 +4,8 @@ const elasticsearch = require('./backend/elasticsearch').default;
 const bigtable = require('./backend/bigtable').default;
 const ceph = require('./backend/ceph').default;
 const memory = require('./backend/memory').default;
+const hdd = require('./backend/hdd').default;
+const ssd = require('./backend/ssd').default;
 
 const backends = {
   HBase: hbase,
@@ -12,10 +14,8 @@ const backends = {
   Bigtable: bigtable,
   Ceph: ceph,
   Memory: memory,
-  Custom: {
-    url: 'N/A',
-    databases: ['InfluxDB', 'Prometheus', 'Akumuli']
-  }
+  HDD: hdd,
+  SSD: ssd
 };
 
 // export default backends;

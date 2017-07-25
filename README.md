@@ -12,7 +12,8 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
   - [Bigtable](#bigtable)
   - [Ceph](#ceph)
   - [Memory](#memory)
-  - [Custom](#custom)
+  - [HDD](#hdd)
+  - [SSD](#ssd)
 - [Reading](#reading)
 - [Monitoring](#monitoring)
 
@@ -61,7 +62,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 [InfluxDB](https://www.influxdata.com/time-series-platform/influxdb/) is a Scalable datastore for metrics, events, and real-time analytics https://influxdata.com
 
 - Language: Go
-- Backends: [Custom](#custom)
+- Backends: [HDD](#hdd), [SSD](#ssd)
 - Tags: LSM Tree
 - [InfluxDB Markedly Outperforms OpenTSDB in Time-Series Data &amp; Metrics Benchmark](https://influxdata.com/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/)
 
@@ -70,7 +71,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 [Prometheus](https://prometheus.io/) is a systems and service monitoring system and time series database featuring pull model, alert, graph etc.
 
 - Language: Go
-- Backends: [Custom](#custom)
+- Backends: [HDD](#hdd), [SSD](#ssd)
 - [Scaling and Federating Prometheus](https://www.robustperception.io/scaling-and-federating-prometheus/)
 
 ### Beringei
@@ -89,7 +90,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 ### Khronus
 
-[Khronus](https://github.com/Searchlight/khronus) is a distributed and reactive time series database designed to store, retrieve, analyze and process a large amount of custom metrics
+[Khronus](https://github.com/Searchlight/khronus) is a distributed and reactive time series database designed to store, retrieve, analyze and process a large amount of Disk metrics
 
 - Language: Scala
 - Backends: [Cassandra](#cassandra)
@@ -120,7 +121,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 [Akumuli](https://github.com/akumuli/Akumuli) is a a numeric time series database that can be used to capture, store and process time-series data in real-time.
 
 - Language: C++
-- Backends: [Custom](#custom)
+- Backends: [HDD](#hdd), [SSD](#ssd)
 - Tags: LSM Tree
 - [Akumuli Markedly Outperforms InfluxDB in Time-Series Data &amp; Metrics Benchmark](http://akumuli.org/akumuli/2017/01/24/benchmark/)
 
@@ -175,7 +176,13 @@ Databases: [Beringei](#beringei), [Atlas](#atlas)
 
 - [Gorilla: A Fast, Scalable, In-Memory Time Series Database](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf)
 
-### Custom
+### HDD
+
+Databases: [InfluxDB](#influxdb), [Prometheus](#prometheus), [Akumuli](#akumuli)
+
+#### Design
+
+### SSD
 
 Databases: [InfluxDB](#influxdb), [Prometheus](#prometheus), [Akumuli](#akumuli)
 

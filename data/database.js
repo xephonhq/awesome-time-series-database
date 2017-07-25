@@ -34,7 +34,7 @@ const databases = {
     url: 'https://www.influxdata.com/time-series-platform/influxdb/',
     description: 'Scalable datastore for metrics, events, and real-time analytics https://influxdata.com',
     language: 'Go',
-    backends: ['Custom'],
+    backends: ['HDD', 'SSD'],
     tags: ['LSM Tree'],
     links: {'InfluxDB Markedly Outperforms OpenTSDB in Time-Series Data & Metrics Benchmark': 'https://influxdata.com/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/'}
   },
@@ -42,7 +42,7 @@ const databases = {
     url: 'https://prometheus.io/',
     description: 'systems and service monitoring system and time series database featuring pull model, alert, graph etc.',
     language: 'Go',
-    backends: ['Custom'],
+    backends: ['HDD', 'SSD'],
     links: {'Scaling and Federating Prometheus': 'https://www.robustperception.io/scaling-and-federating-prometheus/'}
   },
   Beringei: {
@@ -59,7 +59,7 @@ const databases = {
   },
   Khronus: {
     url: 'https://github.com/Searchlight/khronus',
-    description: 'distributed and reactive time series database designed to store, retrieve, analyze and process a large amount of custom metrics',
+    description: 'distributed and reactive time series database designed to store, retrieve, analyze and process a large amount of Disk metrics',
     language: 'Scala',
     backends: ['Cassandra']
   },
@@ -85,7 +85,7 @@ const databases = {
     url: 'https://github.com/akumuli/Akumuli',
     description: 'a numeric time series database that can be used to capture, store and process time-series data in real-time.',
     language: 'C++',
-    backends: ['Custom'],
+    backends: ['HDD', 'SSD'],
     tags: ['LSM Tree'],
     links: {'Akumuli Markedly Outperforms InfluxDB in Time-Series Data & Metrics Benchmark': 'http://akumuli.org/akumuli/2017/01/24/benchmark/'}
   }

@@ -8,7 +8,10 @@
 
 <script>
   export default {
-    asyncData ({ params }) {
+    validate ({params}) {
+      return params.name && params.name !== '';
+    },
+    asyncData ({params}) {
       return {
         name: params.name
       };

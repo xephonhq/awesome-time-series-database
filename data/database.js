@@ -3,6 +3,15 @@ const kairosdb = require('./database/kairosdb').default;
 const heroic = require('./database/heroic').default;
 const btrdb = require('./database/btrdb').default;
 const vaultaire = require('./database/vaultaire').default;
+const influxdb = require('./database/influxdb').default;
+const prometheus = require('./database/prometheus').default;
+const beringei = require('./database/beringei').default;
+const atlas = require('./database/atlas').default;
+const khronus = require('./database/khronus').default;
+const hawkular = require('./database/hawkular_metrics').default;
+const blueflood = require('./database/blueflood').default;
+const newts = require('./database/newts').default;
+const akumuli = require('./database/akumuli').default;
 
 const databases = {
   OpenTSDB: opentsdb,
@@ -10,65 +19,15 @@ const databases = {
   Heroic: heroic,
   BTrDB: btrdb,
   Vaultaire: vaultaire,
-  InfluxDB: {
-    url: 'https://www.influxdata.com/time-series-platform/influxdb/',
-    description: 'Scalable datastore for metrics, events, and real-time analytics https://influxdata.com',
-    language: 'Go',
-    backends: ['HDD', 'SSD'],
-    tags: ['LSM Tree'],
-    links: {'InfluxDB Markedly Outperforms OpenTSDB in Time-Series Data & Metrics Benchmark': 'https://influxdata.com/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/'}
-  },
-  Prometheus: {
-    url: 'https://prometheus.io/',
-    description: 'systems and service monitoring system and time series database featuring pull model, alert, graph etc.',
-    language: 'Go',
-    backends: ['HDD', 'SSD'],
-    links: {'Scaling and Federating Prometheus': 'https://www.robustperception.io/scaling-and-federating-prometheus/'}
-  },
-  Beringei: {
-    url: 'https://github.com/facebookincubator/beringei',
-    description: 'A high performance, in memory time series storage engine designed by Facebook',
-    language: 'C++',
-    backends: ['Memory']
-  },
-  Atlas: {
-    url: 'https://github.com/Netflix/atlas',
-    description: 'In-memory dimensional time series database designed at Netflix',
-    language: 'Scala',
-    backends: ['Memory']
-  },
-  Khronus: {
-    url: 'https://github.com/Searchlight/khronus',
-    description: 'distributed and reactive time series database designed to store, retrieve, analyze and process a large amount of Disk metrics',
-    language: 'Scala',
-    backends: ['Cassandra']
-  },
-  'Hawkular Metrics': {
-    url: 'https://github.com/hawkular/hawkular-metrics',
-    description: 'storage engine for metric data using Cassandra',
-    language: 'Java',
-    backends: ['Cassandra']
-  },
-  Blueflood: {
-    url: 'https://github.com/rackerlabs/blueflood',
-    description: 'distributed system designed to ingest and process time series data built by rackspace',
-    language: 'Java',
-    backends: ['Cassandra', 'Elasticsearch']
-  },
-  Newts: {
-    url: 'https://github.com/OpenNMS/newts',
-    description: 'a time-series data store support searching metadata',
-    language: 'Java',
-    backends: ['Cassandra']
-  },
-  Akumuli: {
-    url: 'https://github.com/akumuli/Akumuli',
-    description: 'a numeric time series database that can be used to capture, store and process time-series data in real-time.',
-    language: 'C++',
-    backends: ['HDD', 'SSD'],
-    tags: ['LSM Tree'],
-    links: {'Akumuli Markedly Outperforms InfluxDB in Time-Series Data & Metrics Benchmark': 'http://akumuli.org/akumuli/2017/01/24/benchmark/'}
-  }
+  InfluxDB: influxdb,
+  Prometheus: prometheus,
+  Beringei: beringei,
+  Atlas: atlas,
+  Khronus: khronus,
+  HawkularMetrics: hawkular,
+  Blueflood: blueflood,
+  Newts: newts,
+  Akumuli: akumuli
 };
 
 // export default databases;

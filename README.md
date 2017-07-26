@@ -95,30 +95,30 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 - Language: Scala
 - Backends: [Cassandra](#cassandra)
 
-### Hawkular Metrics
+### HawkularMetrics
 
-[Hawkular Metrics](https://github.com/hawkular/hawkular-metrics) is a storage engine for metric data using Cassandra
+[HawkularMetrics](http://www.hawkular.org/) is a storage engine for metric data using Cassandra
 
 - Language: Java
 - Backends: [Cassandra](#cassandra)
 
 ### Blueflood
 
-[Blueflood](https://github.com/rackerlabs/blueflood) is a distributed system designed to ingest and process time series data built by rackspace
+[Blueflood](http://blueflood.io/) is a distributed system designed to ingest and process time series data built by rackspace
 
 - Language: Java
 - Backends: [Cassandra](#cassandra), [Elasticsearch](#elasticsearch)
 
 ### Newts
 
-[Newts](https://github.com/OpenNMS/newts) is a a time-series data store support searching metadata
+[Newts](http://opennms.github.io/newts/) is a a time-series data store support searching metadata
 
 - Language: Java
 - Backends: [Cassandra](#cassandra)
 
 ### Akumuli
 
-[Akumuli](https://github.com/akumuli/Akumuli) is a a numeric time series database that can be used to capture, store and process time-series data in real-time.
+[Akumuli](http://akumuli.org/) is a a numeric time series database that can be used to capture, store and process time-series data in real-time.
 
 - Language: C++
 - Backends: [HDD](#hdd), [SSD](#ssd)
@@ -137,7 +137,7 @@ Databases: [OpenTSDB](#opentsdb), [Heroic](#heroic)
 
 ### Cassandra
 
-Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb), [Khronus](#khronus), [Hawkular Metrics](#hawkular-metrics), [Blueflood](#blueflood), [Newts](#newts)
+Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb), [Khronus](#khronus), [HawkularMetrics](#hawkularmetrics), [Blueflood](#blueflood), [Newts](#newts)
 
 #### Design
 

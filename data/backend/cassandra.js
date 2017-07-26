@@ -12,7 +12,7 @@ const Cassandra = {
     'Heroic',
     'OpenTSDB',
     'Khronus',
-    'Hawkular Metrics',
+    'HawkularMetrics',
     'Blueflood',
     'Newts'
   ]

@@ -1,6 +1,6 @@
 <template>
     <div class="ui container">
-        <img class="ui centered small image" src="../assets/awesome.png" />
+        <img class="ui centered small image" src="../assets/awesome.png"/>
         <h1 class="ui center aligned header">Awesome Time Series Database</h1>
         <div class="ui grid">
             <div class="four wide column">
@@ -16,11 +16,25 @@
                 <nuxt-link to="/benchmarks" class="fluid ui red button">Benchmarks</nuxt-link>
             </div>
         </div>
-        <div>
-            <select v-model='lang' class="ui selection dropdown">
-                <option value='All'>All</option>
-                <option :value="lang" v-for="(lang, index) in languages" v-bind:key="index">{{ lang }}</option>
-            </select>
+        <br>
+        <div class="ui form">
+            <div class="inline fields">
+                <div class="four wide field">
+                    <label>Backend</label>
+                    <select v-model='backend' class="ui selection dropdown">
+                        <option value='All'>All</option>
+                        <option :value="backend" v-for="(backend, index) in backends" v-bind:key="index">{{ backend }}
+                        </option>
+                    </select>
+                </div>
+                <div class="four wide field">
+                    <label>Language</label>
+                    <select v-model='lang' class="ui selection dropdown">
+                        <option value='All'>All</option>
+                        <option :value="lang" v-for="(lang, index) in languages" v-bind:key="index">{{ lang }}</option>
+                    </select>
+                </div>
+            </div>
         </div>
         <table class='ui celled table'>
             <thead>
@@ -33,9 +47,9 @@
             </tr>
             </thead>
             <tbody>
-            <tr v-for="(tsdb, name) in tsdbs" v-bind:key="name">
+            <tr v-for="(tsdb, name) in displayedTSDB" v-bind:key="name">
                 <td>
-                    <nuxt-link :to="'db/' + name">{{ name }}</nuxt-link>
+                    <nuxt-link :to="'databases/' + name">{{ name }}</nuxt-link>
                 </td>
                 <td>
                     <a :href="tsdb.url" target="_blank">
@@ -61,35 +75,65 @@
 
 <script>
   import databases from '../../data/database';
+  import meta from '../../data/meta';
 
   export default {
     components: {},
     data () {
+      // console.log(this.$route.query);
+      let lang = 'All';
+      let backend = 'All';
+      if (this.$route.query.language !== '') {
+        lang = this.$route.query.language;
+      }
+      if (this.$route.query.backend !== '') {
+        backend = this.$route.query.backend;
+      }
       return {
         greeting: 'Welcome to your Vue.js app!',
-        tsdbs: databases,
-        originalTsdbs: databases,
-        languages: ['Java', 'C++', 'Go', 'Scala', 'Haskell'],
-        lang: 'All'
+        displayedTSDB: databases,
+        originalTSDB: databases,
+        languages: meta.languages,
+        backends: meta.backends,
+        lang: lang,
+        backend: backend
       };
     },
     watch: {
-      lang (newLang) {
-        // console.log('newLang', newLang);
-        if (newLang === 'All') {
-          this.tsdbs = this.originalTsdbs;
-          return;
-        }
+      lang () {
+        this.updateTable();
+      },
+      backend () {
+        this.updateTable();
+      }
+    },
+    methods: {
+      updateTable () {
+        // console.log(this.lang);
+        // console.log(this.backend);
+        const lang = this.lang;
+        const backend = this.backend;
+        // https://github.com/nuxt/nuxt.js/issues/1101
+        // TODO: make use of router parameter when loading
+        this.$router.push({path: this.$route.path, query: {language: lang, backend: backend}});
+        console.log(this.$route.query);
         let t = {};
-        for (let k in this.originalTsdbs) {
-          if (!this.originalTsdbs.hasOwnProperty(k)) {
+        for (let k in this.originalTSDB) {
+          if (!this.originalTSDB.hasOwnProperty(k)) {
             continue;
           }
-          if (newLang === this.originalTsdbs[k].language) {
-            t[k] = this.originalTsdbs[k];
+          let keep = true;
+          if (lang !== 'All' && lang !== this.originalTSDB[k].language) {
+            keep = false;
+          }
+          if (backend !== 'All' && !this.originalTSDB[k].backends.includes(backend)) {
+            keep = false;
+          }
+          if (keep) {
+            t[k] = this.originalTSDB[k];
           }
         }
-        this.tsdbs = t;
+        this.displayedTSDB = t;
       }
     }
   };

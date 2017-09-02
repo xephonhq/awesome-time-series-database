@@ -45,7 +45,7 @@
 </style>
 
 <script>
-  import databases from '../data/database';
+  import databases from '../../data/database';
 
   export default {
     data () {
@@ -59,7 +59,7 @@
     },
     watch: {
       lang (newLang) {
-        console.log('newLang', newLang);
+        // console.log('newLang', newLang);
         if (newLang === 'All') {
           this.tsdbs = this.originalTsdbs;
           return;

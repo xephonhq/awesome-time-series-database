@@ -21,6 +21,7 @@ module.exports = {
       }
     ]
   },
+  srcDir: 'web/',
   /*
    ** Customize the progress-bar color
    */

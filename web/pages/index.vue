@@ -1,6 +1,21 @@
 <template>
     <div class="ui container">
-        <h1>Awesome Time Series Database</h1>
+        <img class="ui centered small image" src="../assets/awesome.png" />
+        <h1 class="ui center aligned header">Awesome Time Series Database</h1>
+        <div class="ui grid">
+            <div class="four wide column">
+                <nuxt-link to="/databases" class="fluid ui orange button">Databases</nuxt-link>
+            </div>
+            <div class="four wide column">
+                <nuxt-link to="/backends" class="fluid ui blue button">Backends</nuxt-link>
+            </div>
+            <div class="four wide column">
+                <nuxt-link to="/papers" class="fluid ui green button">Papers</nuxt-link>
+            </div>
+            <div class="four wide column">
+                <nuxt-link to="/benchmarks" class="fluid ui red button">Benchmarks</nuxt-link>
+            </div>
+        </div>
         <div>
             <select v-model='lang' class="ui selection dropdown">
                 <option value='All'>All</option>
@@ -48,6 +63,7 @@
   import databases from '../../data/database';
 
   export default {
+    components: {},
     data () {
       return {
         greeting: 'Welcome to your Vue.js app!',

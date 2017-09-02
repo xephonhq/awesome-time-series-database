@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="ui container">
         <h1>I am the parent view</h1>
         <nuxt-child/>
     </div>

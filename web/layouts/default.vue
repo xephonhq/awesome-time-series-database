@@ -1,10 +1,12 @@
 <template>
     <div>
         <nav class="ui blue basic inverted icon top fixed menu">
-            <a class="item logo">
-                <!-- TODO: how to use assets in nuxt -->
-                <img src="assets/logo.png">
+            <a class="item">
+                <i class="sidebar icon"></i>
             </a>
+            <nuxt-link to="/" class="item">
+                Awesome Time Series Database
+            </nuxt-link>
             <div class="right menu">
                 <!-- TODO: real client side search -->
                 <a class="item">
@@ -27,5 +29,6 @@
 <style scoped>
     .main-container {
         margin-top: 70px;
+        margin-bottom: 20px;
     }
 </style>

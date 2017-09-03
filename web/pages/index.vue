@@ -1,5 +1,6 @@
 <template>
     <div class="ui container">
+        <!-- TODO: https://nuxtjs.org/guide/assets use ~ -->
         <img class="ui centered small image" src="../assets/awesome.png"/>
         <h1 class="ui center aligned header">Awesome Time Series Database</h1>
         <div class="ui grid">
@@ -36,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <table class='ui celled table'>
+        <table class='ui fixed celled table'>
             <thead>
             <tr>
                 <th>Name</th>
@@ -47,7 +48,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr v-for="(tsdb, name) in displayedTSDB" v-bind:key="name">
+            <tr v-for="(tsdb, name) in filtered()" v-bind:key="name">
                 <td>
                     <nuxt-link :to="'databases/' + name">{{ name }}</nuxt-link>
                 </td>
@@ -77,10 +78,12 @@
   import databases from '../../data/database';
   import meta from '../../data/meta';
 
+  // TODO: change to a
   export default {
     components: {},
     data () {
       // console.log(this.$route.query);
+      // TODO: is this the proper place to set the model based on url query parameters
       let lang = 'All';
       let backend = 'All';
       if (this.$route.query.language !== '') {
@@ -91,8 +94,6 @@
       }
       return {
         greeting: 'Welcome to your Vue.js app!',
-        displayedTSDB: databases,
-        originalTSDB: databases,
         languages: meta.languages,
         backends: meta.backends,
         lang: lang,
@@ -101,39 +102,38 @@
     },
     watch: {
       lang () {
-        this.updateTable();
+        // console.log('lang changed!');
       },
       backend () {
-        this.updateTable();
+        // console.log('backend changed');
       }
     },
     methods: {
-      updateTable () {
+      // use computed instead of update when watch is triggered
+      // https://vuejs.org/v2/guide/computed.html#Computed-vs-Watched-Property
+      filtered () {
+        const lang = this.lang ? this.lang : 'All';
+        const backend = this.backend ? this.backend : 'All';
+        this.$router.push({path: '', query: {language: lang, backend: backend}});
         // console.log(this.lang);
         // console.log(this.backend);
-        const lang = this.lang;
-        const backend = this.backend;
-        // https://github.com/nuxt/nuxt.js/issues/1101
-        // TODO: make use of router parameter when loading
-        this.$router.push({path: this.$route.path, query: {language: lang, backend: backend}});
-        console.log(this.$route.query);
         let t = {};
-        for (let k in this.originalTSDB) {
-          if (!this.originalTSDB.hasOwnProperty(k)) {
+        for (let k in databases) {
+          if (!databases.hasOwnProperty(k)) {
             continue;
           }
           let keep = true;
-          if (lang !== 'All' && lang !== this.originalTSDB[k].language) {
+          if (lang !== 'All' && lang !== databases[k].language) {
             keep = false;
           }
-          if (backend !== 'All' && !this.originalTSDB[k].backends.includes(backend)) {
+          if (backend !== 'All' && !databases[k].backends.includes(backend)) {
             keep = false;
           }
           if (keep) {
-            t[k] = this.originalTSDB[k];
+            t[k] = databases[k];
           }
         }
-        this.displayedTSDB = t;
+        return t;
       }
     }
   };

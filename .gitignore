@@ -2,3 +2,8 @@ node_modules
 *.log
 .idea
 README.md.html
+.nuxt
+# it is not consistent between my mac and linux, lock is updated instead of followed
+package-lock.json
+# ignore generated file
+dist

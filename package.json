@@ -1,10 +1,17 @@
 {
   "name": "awesome-time-series-database",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A curated list of awesome time series databases, benchmark tools, blog and published papers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "pregenerate": "node generate.js",
+    "generate": "nuxt generate",
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -23,9 +30,18 @@
   },
   "homepage": "https://github.com/xephonhq/awesome-time-series-database#readme",
   "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^4.2.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-html": "^3.1.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.4.1",
+    "eslint-plugin-standard": "^3.0.1",
     "handlebars": "^4.0.5",
-    "js-yaml": "^3.6.1",
     "lodash": "^4.15.0",
+    "nuxt": "latest",
     "winston": "^2.3.1"
   }
 }

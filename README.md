@@ -12,7 +12,8 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
   - [Bigtable](#bigtable)
   - [Ceph](#ceph)
   - [Memory](#memory)
-  - [Custom](#custom)
+  - [HDD](#hdd)
+  - [SSD](#ssd)
 - [Reading](#reading)
 - [Monitoring](#monitoring)
 
@@ -42,7 +43,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 ### BTrDB
 
-[BTrDB](https://github.com/SoftwareDefinedBuildings/btrdb) (Berkeley Tree Database) is a High performance time series database designed to support high density data storage applications.
+[BTrDB](http://btrdb.io/) (Berkeley Tree Database) is a High performance time series database designed to support high density data storage applications.
 
 - Language: Go
 - Backends: [Ceph](#ceph)
@@ -61,7 +62,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 [InfluxDB](https://www.influxdata.com/time-series-platform/influxdb/) is a Scalable datastore for metrics, events, and real-time analytics https://influxdata.com
 
 - Language: Go
-- Backends: [Custom](#custom)
+- Backends: [HDD](#hdd), [SSD](#ssd)
 - Tags: LSM Tree
 - [InfluxDB Markedly Outperforms OpenTSDB in Time-Series Data &amp; Metrics Benchmark](https://influxdata.com/influxdb-markedly-outperforms-opentsdb-in-time-series-data-metrics-benchmark/)
 
@@ -70,7 +71,7 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 [Prometheus](https://prometheus.io/) is a systems and service monitoring system and time series database featuring pull model, alert, graph etc.
 
 - Language: Go
-- Backends: [Custom](#custom)
+- Backends: [HDD](#hdd), [SSD](#ssd)
 - [Scaling and Federating Prometheus](https://www.robustperception.io/scaling-and-federating-prometheus/)
 
 ### Beringei
@@ -89,38 +90,38 @@ A curated list of awesome time series databases, benchmark tools, blog and publi
 
 ### Khronus
 
-[Khronus](https://github.com/Searchlight/khronus) is a distributed and reactive time series database designed to store, retrieve, analyze and process a large amount of custom metrics
+[Khronus](https://github.com/Searchlight/khronus) is a distributed and reactive time series database designed to store, retrieve, analyze and process a large amount of Disk metrics
 
 - Language: Scala
 - Backends: [Cassandra](#cassandra)
 
-### Hawkular Metrics
+### HawkularMetrics
 
-[Hawkular Metrics](https://github.com/hawkular/hawkular-metrics) is a storage engine for metric data using Cassandra
+[HawkularMetrics](http://www.hawkular.org/) is a storage engine for metric data using Cassandra
 
 - Language: Java
 - Backends: [Cassandra](#cassandra)
 
 ### Blueflood
 
-[Blueflood](https://github.com/rackerlabs/blueflood) is a distributed system designed to ingest and process time series data built by rackspace
+[Blueflood](http://blueflood.io/) is a distributed system designed to ingest and process time series data built by rackspace
 
 - Language: Java
 - Backends: [Cassandra](#cassandra), [Elasticsearch](#elasticsearch)
 
 ### Newts
 
-[Newts](https://github.com/OpenNMS/newts) is a a time-series data store support searching metadata
+[Newts](http://opennms.github.io/newts/) is a a time-series data store support searching metadata
 
 - Language: Java
 - Backends: [Cassandra](#cassandra)
 
 ### Akumuli
 
-[Akumuli](https://github.com/akumuli/Akumuli) is a a numeric time series database that can be used to capture, store and process time-series data in real-time.
+[Akumuli](http://akumuli.org/) is a a numeric time series database that can be used to capture, store and process time-series data in real-time.
 
 - Language: C++
-- Backends: [Custom](#custom)
+- Backends: [HDD](#hdd), [SSD](#ssd)
 - Tags: LSM Tree
 - [Akumuli Markedly Outperforms InfluxDB in Time-Series Data &amp; Metrics Benchmark](http://akumuli.org/akumuli/2017/01/24/benchmark/)
 
@@ -136,7 +137,7 @@ Databases: [OpenTSDB](#opentsdb), [Heroic](#heroic)
 
 ### Cassandra
 
-Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb), [Khronus](#khronus), [Hawkular Metrics](#hawkular-metrics), [Blueflood](#blueflood), [Newts](#newts)
+Databases: [KairosDB](#kairosdb), [Heroic](#heroic), [OpenTSDB](#opentsdb), [Khronus](#khronus), [HawkularMetrics](#hawkularmetrics), [Blueflood](#blueflood), [Newts](#newts)
 
 #### Design
 
@@ -175,7 +176,13 @@ Databases: [Beringei](#beringei), [Atlas](#atlas)
 
 - [Gorilla: A Fast, Scalable, In-Memory Time Series Database](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf)
 
-### Custom
+### HDD
+
+Databases: [InfluxDB](#influxdb), [Prometheus](#prometheus), [Akumuli](#akumuli)
+
+#### Design
+
+### SSD
 
 Databases: [InfluxDB](#influxdb), [Prometheus](#prometheus), [Akumuli](#akumuli)
 

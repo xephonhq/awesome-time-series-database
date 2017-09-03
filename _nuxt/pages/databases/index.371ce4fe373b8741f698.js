@@ -1,0 +1,2 @@
+webpackJsonp([4],{"+h7v":function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var l=t("DzRJ"),s=t("VU/8"),a=s(null,l.a,null,null,null);n.default=a.exports},DzRJ:function(e,n,t){"use strict";var l=function(){var e=this,n=e.$createElement;return(e._self._c||n)("div",[e._v("\n    I should show all the databases\n")])},s=[],a={render:l,staticRenderFns:s};n.a=a}});
+//# sourceMappingURL=index.371ce4fe373b8741f698.js.map

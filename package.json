@@ -1,6 +1,6 @@
 {
   "name": "awesome-time-series-database",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A curated list of awesome time series databases, benchmark tools, blog and published papers",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "pregenerate": "node generate.js",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"

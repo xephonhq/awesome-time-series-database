@@ -91,7 +91,7 @@ hb.registerHelper('toRef', toRef);
 
 // Render and writ to file
 let tmpl = hb.compile(fs.readFileSync('README.handlebars', 'utf-8'));
-// FIXME: the template gnerated extra line breaks
+// FIXME: the template generates extra line breaks
 // http://stackoverflow.com/questions/10965433/regex-replace-multi-line-breaks-with-single-in-javascript
 let out = tmpl(data).replace(/\n\s*\n\s*\n/g, '\n\n');
 fs.writeFileSync('README.md', out);

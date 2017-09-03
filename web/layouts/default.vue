@@ -15,9 +15,6 @@
                         <i class="search link icon"></i>
                     </div>
                 </a>
-                <a class="item">
-                    <div class="ui primary button"><i class="user icon"></i>at15</div>
-                </a>
             </div>
         </nav>
         <div class="main-container">

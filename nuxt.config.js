@@ -30,6 +30,7 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    // publicPath: '/awesome-time-series-database/',
     /*
      ** Run ESLINT on save
      */
@@ -44,7 +45,15 @@ module.exports = {
       }
     }
   },
+  router: {
+    // https://nuxtjs.org/api/configuration-router/
+    // The base URL of the app. For example, if the entire single page application is served under /app/, then base should use the value '/app/'
+    base: '/awesome-time-series-database/'
+  },
   generate: {
-    dir: 'docs'
+    dir: 'dist',
+    routes: [
+      '/databases/OpenTSDB'
+    ]
   }
 };

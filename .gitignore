@@ -6,4 +6,4 @@ README.md.html
 # it is not consistent between my mac and linux, lock is updated instead of followed
 package-lock.json
 # ignore generated file
-docs
+dist

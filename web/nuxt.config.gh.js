@@ -1,4 +1,5 @@
-// NOTE: we use web/nuxt.config.gh.js to generate static files for gh-pages, this file is only for dev
+// NOTE: we use this file to build for gh-pages, we copy this file out to root in Makefile's build task
+// TODO: we should figure out how to specify config file for nuxt
 module.exports = {
   /*
    ** Headers of the page
@@ -47,7 +48,14 @@ module.exports = {
     }
   },
   router: {
+    // https://nuxtjs.org/api/configuration-router/
+    // The base URL of the app. For example, if the entire single page application is served under /app/, then base should use the value '/app/'
+    base: '/awesome-time-series-database/'
   },
   generate: {
+    dir: 'dist',
+    routes: [
+      '/databases/OpenTSDB'
+    ]
   }
 };

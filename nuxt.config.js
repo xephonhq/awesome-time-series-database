@@ -63,5 +63,8 @@ module.exports = {
   router: {
   },
   generate: {
-  }
+  },
+  modules: [
+    ['@nuxtjs/google-analytics', { ua: 'UA-84338852-2' }]
+  ]
 };

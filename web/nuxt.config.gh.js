@@ -70,5 +70,8 @@ module.exports = {
     routes: [
       '/databases/OpenTSDB'
     ]
-  }
+  },
+  modules: [
+    ['@nuxtjs/google-analytics', { ua: 'UA-84338852-2' }]
+  ]
 };

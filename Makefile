@@ -4,6 +4,12 @@ BUILD_COMMIT = $(shell git rev-parse HEAD)
 dev:
 	npm run dev
 
+
+.PHONY: clean
+clean:
+	rm -rf dist
+	rm -rf .nuxt
+
 .PHONY: build
 build:
 	mv nuxt.config.js nuxt.config.js.bak

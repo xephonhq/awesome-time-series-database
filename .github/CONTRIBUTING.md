@@ -2,12 +2,16 @@
 
 This project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
+Please read [README.dev.md](../README.dev.md) to know how to develop the website even if you're just trying to fix a typo
+because README.md and web pages are all generated.
 
 ## DO NOT
 
-- edit `README.md` directly
+- edit `README.md` directly, it is auto generated
 
 ## Adding databases
+
+<!-- TODO: we need to distinguish PR and issue, people can add database in PR directly, and need to follow the schema -->
 
 - use a clean title for you issue and PR, like `[add][database][InfluxDB]`
 - provide valid link. (NOTE: some paper are not free to public, you can point it to the publisher instead of a PDF file,

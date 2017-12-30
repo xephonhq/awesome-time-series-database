@@ -44,5 +44,9 @@
     "lodash": "^4.15.0",
     "nuxt": "^1.0.0-rc11",
     "winston": "^2.4.0"
+  },
+  "dependencies": {
+    "alasql": "^0.4.4",
+    "sql.js": "^0.4.0"
   }
 }

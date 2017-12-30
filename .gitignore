@@ -7,3 +7,5 @@ README.md.html
 package-lock.json
 # ignore generated file
 dist
+# ignore sqlite database file
+*.sqlite

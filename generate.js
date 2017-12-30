@@ -1,5 +1,6 @@
 'use strict';
 
+// check the constraints and generate README.md
 const fs = require('fs');
 const _ = require('lodash');
 const hb = require('handlebars');

@@ -2,6 +2,8 @@
 
 ## Questions we want to ask
 
+- database using Cassandra as backend
+- database without external backend (i.e. all by itself)
 - count of database writing in Java
 - databases that has java client library
 
@@ -27,6 +29,14 @@ database/*.js
 database
 
 - [ ] TODO: might look at some slides for SQL ...
+- [ ] TODO: need to handle different version, at least for backend (i.e. influxdb switched backend multiple times)
+  - might distinguish database using external database? in database_backend table, put its self in?
+- the detail page is a document (which is what we write at first)
+- [ ] supported data types (int, float, string, tags etc, histogram?)
+
+events
+
+- [ ] news like new release, blog, conference, benchmark results etc.
 
 ## Reference
 
@@ -48,3 +58,9 @@ database
 - stored procedures: support, not
 - joins: not, nested loop, hash, sort merge, broadcast, semi, limited, shuffle
 - query compilation: not, code gen, JIT, stored procedure compilation 
+
+### db-engines.com
+
+It supports compare lol
+
+- https://db-engines.com/en/system/InfluxDB%3BKairosDB

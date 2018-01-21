@@ -1,0 +1,5 @@
+name: xephonk
+display_name: Xephon-K
+oss: true
+license: MIT
+#variants: TODO: how to specify empty array in YAML

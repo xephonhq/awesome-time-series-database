@@ -1,15 +1,27 @@
-# Awesome TSDB website
+---
+home: true
+heroImage: /awesome.png
+actionText: 404
+actionLink: /notexists/
+features:
+- title: Foo
+  details: Foo details 
+- title: Foo
+  details: Foo details 
+- title: Foo
+  details: Foo details
+footer: MIT Licensed
+---
 
-The website is built using [nuxt.js](https://nuxtjs.org/) and [Semantic UI](https://semantic-ui.com/).
-It is published in [gh-pages branch](https://github.com/xephonhq/awesome-time-series-database/tree/gh-pages).
+Table of content
 
-## Edit
+[[toc]]
 
-- you should not edit the gh-pages branch directly, those are auto generated html and js files
-- [ ] TODO: detail about how to edit those `.vue` files
+# Usage
 
-## Publish
-
-- NOTE: we ust `nuxt.config.gh.js` to build content for gh pages, `nuxt.config.js` is for local dev
-- `make publish` would build and commit in `/tmp/awesome-time-series-database`
-- `git push origin gh-pages`
+````bash
+# dev server listen on localhost:8080
+npm run docs:dev
+# use eslint
+npm run lint
+````

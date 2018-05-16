@@ -1,0 +1,32 @@
+{
+  "name": "awesome-time-series-database",
+  "version": "0.1.0",
+  "description": "A curated list of awesome time series databases, benchmark tools, blog and published papers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xephonhq/awesome-time-series-database.git"
+  },
+  "keywords": [
+    "time series",
+    "database",
+    "distributed systems",
+    "awesome"
+  ],
+  "author": "at15@outlook.com",
+  "license": "SEE LICENSE IN http://creativecommons.org/publicdomain/zero/1.0/",
+  "bugs": {
+    "url": "https://github.com/xephonhq/awesome-time-series-database/issues"
+  },
+  "homepage": "https://github.com/xephonhq/awesome-time-series-database",
+  "scripts": {
+    "docs:dev": "vuepress dev",
+    "docs:build": "vuepress build",
+    "lint": "eslint --fix --ext .js,.vue .vuepress"
+  },
+  "devDependencies": {
+    "alasql": "^0.4.5",
+    "vuepress": "^0.8.4",
+    "eslint": "^4.19.1",
+    "eslint-plugin-vue-libs": "^3.0.0"
+  }
+}

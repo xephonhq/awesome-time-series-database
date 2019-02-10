@@ -14,5 +14,15 @@ module.exports = {
         //     '/go.md',
         //     '/k8s.md',
         // ]
-    }
+    },
+    plugins: [
+        '@vuepress/back-to-top',
+        '@vuepress/last-updated',
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'UA-84338852-2'
+            }
+        ]
+    ]
 }

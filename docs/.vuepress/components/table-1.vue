@@ -31,35 +31,47 @@
 </template>
 
 <script>
-import { databases } from '../../data/databases';
+  import { databases } from '../../data/databases'
 
-export default {
-  data () {
-    console.log('table-1.vue', databases);
-    // TODO: get lang and backend from router query parameters
-    const lang = 'all';
-    const backend = 'all';
-
-    return {
-      databases: databases,
-      lang: lang,
-      backend: backend
-    };
-  },
-  computed: {
-    filtered: function () {
-      const lang = this.lang;
-      const databases = this.databases;
-
-      const t = [];
-      for (let i = 0; i < databases.length; i++) {
-        if (lang === 'all' || databases[i].lang === lang) {
-          t.push(databases[i]);
-        }
+  export default {
+    data () {
+      console.log('table-1.vue', databases)
+      console.log(this.$route.query)
+      // TODO: get lang and backend from router query parameters
+      //https://github.com/xephonhq/awesome-time-series-database/blob/df1aae8571f8e1c3200d3b0d7fe6590f6684a7ed/web/pages/index.vue
+      let lang = 'all'
+      let backend = 'all'
+      if (this.$route.query.language !== '') {
+        lang = this.$route.query.language
       }
-      return t;
+      if (this.$route.query.backend != '') {
+        backend = this.$route.query.backend
+      }
+
+      return {
+        databases: databases,
+        lang: lang,
+        backend: backend
+      }
+    },
+    computed: {
+      filtered: function () {
+        // TODO: handle lang == 'All' for backward compatibility and show warning when an unknown lang is given
+        const lang = this.lang ? this.lang : 'all'
+        const backend = this.backend ? this.backend : 'all'
+        const databases = this.databases
+        // Update url so user can copy and share
+        this.$router.push({ path: '', query: { language: lang, backend: backend } })
+
+        const t = []
+        for (let i = 0; i < databases.length; i++) {
+          if (lang === 'all' || databases[i].lang === lang) {
+            t.push(databases[i])
+          }
+        }
+        return t
+      }
     }
   }
-};
 </script>
 

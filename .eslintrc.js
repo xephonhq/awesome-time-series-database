@@ -10,9 +10,5 @@ module.exports = {
     plugins: [
         'html'
     ],
-    // add your custom rules here
-    rules: {
-        semi: [1, "always"]
-    },
     globals: {}
 };

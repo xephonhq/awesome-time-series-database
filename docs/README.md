@@ -1,3 +1,3 @@
 This is awesome tsdb
 
-<table-1/>
+<table-database title="first database table"/>

@@ -2,12 +2,16 @@
     <div>
         <p>{{ title }}</p>
         <div>
-                <span v-for="opt in options">
-                    <label>{{ opt.name }}</label>
-                    <select v-model="opt.value">
-                        <option v-bind:value="v" v-for="v in opt.values">{{ v }}</option>
-                    </select>
-                </span>
+            <ul>
+                <li v-for="opt in options">
+                    <label>
+                        {{ opt.name }}
+                        <select v-model="opt.value">
+                            <option v-bind:value="v" v-for="v in opt.values">{{ v }}</option>
+                        </select>
+                    </label>
+                </li>
+            </ul>
         </div>
         <div>
             what you selected is
@@ -37,10 +41,10 @@
 </template>
 
 <script>
-  import { databaseSchema, databases } from '../../../../data/database/index'
+  import { databases, databaseSchema } from '../../../../data/database'
 
   export default {
-    name: 'database',
+    name: 'database-table',
     props: ['title'],
     data () {
 
@@ -83,11 +87,7 @@
     },
     computed: {
       filtered: function () {
-        // TODO: the filter logic here need to be generalized
-        // - update router based on filter tag
-        // - apply all the filter (it's kind of like query execution), we are just applying one operator after another TODO: watch andy's query plan video, need it anyway
-
-        // TODO: Update url so user can copy and share it
+        // TODO: update router based on filter tag so user can copy and share it
         // TODO: check before push to avoid NavigationDuplicated error
         // this.$router.push({ path: '', query: { language: lang, backend: backend } })
 

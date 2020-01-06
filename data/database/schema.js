@@ -1,4 +1,23 @@
+// TODO: add the following properties
+// - cloud provider, i.e. some host solution only runs on one platform
+
 let databaseSchema = [
+  {
+    name: 'name',
+    type: 'value'
+  },
+  {
+    name: 'displayName',
+    type: 'value'
+  },
+  {
+    name: 'website',
+    type: 'value'
+  },
+  {
+    name: 'github',
+    type: 'value'
+  },
   {
     name: 'status',
     type: 'value',
@@ -26,6 +45,7 @@ let databaseSchema = [
     values: [
       'bigtable',
       'cassandra',
+      'ceph',
       'elasticsearch',
       'hbase',
       'memory',
@@ -38,9 +58,21 @@ let databaseSchema = [
     type: 'array',
     values: [
       'prometheus',
+      'grpc',
       'http',
       'tcp',
       'udp'
+    ]
+  },
+  {
+    name: 'query',
+    type: 'array',
+    values: [
+      'sql',
+      'json',
+      'promql',
+      'influxql',
+      'flux'
     ]
   },
   {

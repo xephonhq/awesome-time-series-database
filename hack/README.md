@@ -14,18 +14,27 @@ yarn docs:dev
 ## Naming
 
 - use `alllowercase` to reduce typo, e.g. `influxdb`, `cassandra`, `xephonk`
-  - license names are exception, they are based on https://choosealicense.com/licenses/
+- license names are based on https://choosealicense.com/licenses/
 
 ## Schema
 
 Database
 
-- data/database
+| name        | desc                                                        |
+|-------------|-------------------------------------------------------------|
+| name        | unique name in lowercase, used as id                        |
+| displayName | official name                                               |
+| website |                                             |
+| github | open source code (if any)                                              |
+| status      | is the project dead or alive                                |
+| lang        | programming language(s)                                     |
+| backend     | storage layer of database, other db, local fs, object store |
+| protocol    | wire protocol format and transportation                     |
+| query       | query language                                              |
+| license     |                                                             |
 
-Benchmark
-
-- 
 
 ## Check
 
 - for nodejs to use es6 import, import need to have `.js` suffix
+- top level `package.json` will error when there is `"type": "json"` so we have a separated [data/package.json](data/package.json)

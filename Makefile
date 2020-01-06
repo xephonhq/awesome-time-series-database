@@ -3,4 +3,4 @@ dev:
 	yarn run docs:dev
 
 check:
-	cd data && node check.js
+	cd data && node --no-warnings check.js

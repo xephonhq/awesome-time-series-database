@@ -1,3 +1,3 @@
 # List of time series databases
 
-<table-database title="List of databases"/>
+<database-table title="List of databases"></database-table>

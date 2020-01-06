@@ -1,6 +1,8 @@
 let influxdb = {
   name: 'influxdb',
   displayName: 'InfluxDB',
+  website: 'https://www.influxdata.com/products/influxdb-overview/',
+  github: 'https://github.com/influxdata/influxdb',
   status: 'active',
   lang: 'go',
   backend: [
@@ -8,6 +10,10 @@ let influxdb = {
   ],
   protocol: [
     'http'
+  ],
+  query: [
+    'influxql',
+    'flux'
   ],
   license: 'mit'
 }

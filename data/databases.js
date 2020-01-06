@@ -2,6 +2,15 @@
 
 let databaseSchema = [
   {
+    name: 'status',
+    type: 'value',
+    values: [
+      'active',
+      'maintained',
+      'dead'
+    ]
+  },
+  {
     name: 'lang',
     type: 'value',
     values: [
@@ -21,7 +30,8 @@ let databaseSchema = [
       'cassandra',
       'elasticsearch',
       'hbase',
-      'local',
+      'memory',
+      'localfs',
       's3',
     ]
   },
@@ -37,11 +47,11 @@ let databaseSchema = [
   }
 ]
 
-
 let databases = [
   {
     name: 'kairosdb',
     displayName: 'KairosDB',
+    status: 'active',
     lang: 'java',
     backend: [
       'cassandra'
@@ -51,6 +61,7 @@ let databases = [
   {
     name: 'opentsdb',
     displayName: 'OpenTSDB',
+    status: 'active',
     lang: 'java',
     backend: [
       'hbase'
@@ -60,15 +71,17 @@ let databases = [
   {
     name: 'influxdb',
     displayName: 'InfluxDB',
+    status: 'active',
     lang: 'go',
     backend: [
-      'local'
+      'localfs'
     ],
     license: 'mit'
   },
   {
     name: 'heroic',
     displayName: 'Heroic',
+    status: 'maintained',
     lang: 'java',
     backend: [
       'bigtable',
@@ -76,6 +89,17 @@ let databases = [
       'elasticsearch'
     ],
     license: 'apache-2.0'
+  },
+  {
+    name: 'xephonk',
+    displayName: 'XephonK',
+    status: 'dead',
+    lang: 'go',
+    backend: [
+      'cassandra',
+      'localfs'
+    ],
+    license: 'mit'
   }
 ]
 

@@ -1,7 +1,6 @@
 <template>
     <div>
-        <p>Title is: {{ title }}</p>
-        1 + 1 = {{ 1 + 1 }}
+        <p>{{ title }}</p>
         <div>
                 <span v-for="opt in options">
                     <label>{{ opt.name }}</label>
@@ -21,14 +20,16 @@
                 <th>Language</th>
                 <th>Backend</th>
                 <th>License</th>
+                <th>Status</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="db in filtered">
-                <td>{{ db.name }}</td>
+                <td><a v-bind:href="'database/' + db.name" target="_blank">{{ db.name }}</a></td>
                 <td>{{ db.lang }}</td>
                 <td>{{ db.backend }}</td>
                 <td>{{ db.license }}</td>
+                <td>{{ db.status }}</td>
             </tr>
             </tbody>
         </table>

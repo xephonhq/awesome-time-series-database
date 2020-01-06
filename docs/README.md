@@ -1,3 +1,8 @@
-This is awesome tsdb
+# Awesome time series database
 
-<table-database title="first database table"/>
+- [Databases](databases.md)
+- Benchmarks
+- Papers
+- Backends
+
+<table-database title="List of databases"/>

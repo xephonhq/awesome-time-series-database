@@ -18,4 +18,14 @@ yarn docs:dev
 
 ## Schema
 
-Schema and data are defined in one file e.g. [data/database.js](../data/databases.js).
+Database
+
+- data/database
+
+Benchmark
+
+- 
+
+## Check
+
+- for nodejs to use es6 import, import need to have `.js` suffix

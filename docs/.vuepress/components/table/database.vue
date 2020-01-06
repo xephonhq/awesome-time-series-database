@@ -37,7 +37,7 @@
 </template>
 
 <script>
-  import { databaseSchema, databases } from '../../../../data/databases'
+  import { databaseSchema, databases } from '../../../../data/database/index'
 
   export default {
     name: 'database',

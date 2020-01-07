@@ -7,7 +7,7 @@ echo "arg is $1"
 
 # Build
 git status
-mv docs/.vuepress/dist/config.gh.js docs/.vuepress/dist/config.js
+mv docs/.vuepress/config.gh.js docs/.vuepress/config.js
 make build
 DIST_PATH="$(pwd)/docs/.vuepress/dist/"
 

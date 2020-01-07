@@ -1,10 +1,10 @@
-# Awesome time-series database
+# Awesome time series database
 
 [![Build Status](https://travis-ci.org/xephonhq/awesome-time-series-database.svg?branch=master)](https://travis-ci.org/xephonhq/awesome-time-series-database)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2ea12ac4-c2b9-4767-87d6-8ac65ce5ee30/deploy-status)](https://app.netlify.com/sites/awesome-time-series-database/deploys)
 
-A curated list of time series databases, benchmark tools, blog and published papers.
-For interactive version, check the [website](https://awesome-time-series-database.netlify.com/)
+A curated list of time series databases.
+For filtering based on language, backend etc. Check out the [website](https://awesome-time-series-database.netlify.com/)
 
 <!--DBTABLE_START-->
 |name|github|status|lang|backend|protocol|query|license|

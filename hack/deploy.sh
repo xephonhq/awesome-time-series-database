@@ -23,6 +23,10 @@ rsync -avh "${DIST_PATH}" /tmp/repo/
 git status
 
 # Commit and push
+COMMIT_EMAIL=$(jq '.pusher.email' "${GITHUB_EVENT_PATH}")
+COMMIT_NAME=$(jq '.pusher.name' "${GITHUB_EVENT_PATH}")
+git config user.email "${COMMIT_EMAIL}"
+git config user.name "${COMMIT_NAME}"
 git add -A .
 git commit -m "Deplo from ${GITHUB_SHA}"
 git push "${REPO_PATH}:gh-pages"

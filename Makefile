@@ -12,3 +12,6 @@ check:
 
 build:
 	yarn docs:build
+
+clean:
+	rm -rf docs/.vuepress/dist

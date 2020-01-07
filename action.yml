@@ -1,0 +1,7 @@
+name: 'deploy'
+description: 'Build Vuepress site and deploy to gh-pages'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - foo

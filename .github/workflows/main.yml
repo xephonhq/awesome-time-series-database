@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: deploy to gh-pages
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Deploy
+        env:
+          GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+        uses: ./ # Uses an action in the root directory

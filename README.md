@@ -29,6 +29,7 @@ For interactive version, check the [website](https://awesome-time-series-databas
 - [awesome big data](https://github.com/onurakpolat/awesome-bigdata#time-series-databases)
 - [List of Time Series Databases](https://misfra.me/2016/04/09/tsdb-list/) by [Preetam Jinka](https://twitter.com/PreetamJinka)
 - [awesome db](https://github.com/numetriclabz/awesome-db)
+- [Github topic: timeseries-database](https://github.com/topics/timeseries-database)
 
 ## License
 

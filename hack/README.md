@@ -52,3 +52,7 @@ Database
 - https://awesome-time-series-database.netlify.com/
 - [ ] https://github.com/xephonhq/awesome-time-series-database/issues/72
   - https://xephonhq.github.io/awesome-time-series-database is still outdated
+  - https://github.com/grasilife/github-pages-deploy-action
+  - https://github.com/ad-m/github-push-action
+  - https://github.com/peaceiris/actions-gh-pages#getting-started
+  - https://github.community/t5/GitHub-Actions/Github-action-not-triggering-gh-pages-upon-push/m-p/26869/highlight/true#M301

@@ -21,7 +21,7 @@
     name: 'database-detail',
     props: ['dbname'],
     data() {
-      console.log('dbname', this.dbname)
+      // console.log('dbname', this.dbname)
       let selectedDB = {
         name: 'database not found'
       }

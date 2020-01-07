@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - lts/*
+before_install:
+  - make check
+  - make generate
+install:
+  - yarn install # npm ci
+  - make build

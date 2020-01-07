@@ -46,3 +46,9 @@ Database
 
 - for nodejs to use es6 import, import need to have `.js` suffix
 - top level `package.json` will error when there is `"type": "json"` so we have a separated [data/package.json](data/package.json)
+
+## Deploy
+
+- https://awesome-time-series-database.netlify.com/
+- [ ] https://github.com/xephonhq/awesome-time-series-database/issues/72
+  - https://xephonhq.github.io/awesome-time-series-database is still outdated

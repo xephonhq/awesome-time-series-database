@@ -9,3 +9,6 @@ generate: check
 
 check:
 	cd data && $(NODE) check.js
+
+build:
+	yarn docs:build

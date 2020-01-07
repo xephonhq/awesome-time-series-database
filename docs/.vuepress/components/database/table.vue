@@ -61,7 +61,7 @@
       //   backend = this.$route.query.backend
       // }
 
-      console.log('all databases', databaseSchema, databases)
+      // console.log('all databases', databaseSchema, databases)
       // options are a copy of the schema
       let options = []
       for (const col of databaseSchema) {
@@ -116,7 +116,7 @@
           }
           tmp = filtered
         }
-        console.log('after filter', tmp)
+        // console.log('after filter', tmp)
         return tmp
       }
     }

@@ -1,14 +1,14 @@
-const Prometheus = {
-  name: 'Prometheus',
+let prometheus = {
+  name: 'prometheus',
+  displayName: 'Prometheus',
+  website: 'https://prometheus.io/',
   github: 'https://github.com/prometheus/prometheus',
-  url: 'https://prometheus.io/',
-  description: 'systems and service monitoring system and time series database featuring pull model, alert, graph etc.',
-  language: 'Go',
-  backends: ['HDD', 'SSD'],
-  links: {'Scaling and Federating Prometheus': 'https://www.robustperception.io/scaling-and-federating-prometheus/'}
-};
+  status: 'active',
+  lang: 'go',
+  backend: ['localfs'],
+  protocol: ['prometheus'],
+  query: ['promql'],
+  license: 'apache-2.0'
+}
 
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-exports.default = Prometheus;
+export { prometheus }

@@ -2,6 +2,7 @@
 
 This project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
+FIXME: this doc is outdated, we are using vuepress instead of nuxt.js now
 
 ## DO NOT
 

@@ -1,13 +1,15 @@
-const Khronus = {
-  name: 'Khronus',
-  github: 'https://github.com/Searchlight/khronus',
-  url: 'https://github.com/Searchlight/khronus',
-  description: 'distributed and reactive time series database designed to store, retrieve, analyze and process a large amount of Disk metrics',
-  language: 'Scala',
-  backends: ['Cassandra']
-};
+let khronus = {
+  name: 'khronus',
+  displayName: 'Khronus',
+  website: 'https://github.com/khronus/khronus',
+  github: 'https://github.com/khronus/khronus',
+  status: 'dead',
+  lang: 'scala',
+  backend: ['cassandra'],
+  // TODO: double check protocol and query
+  protocol: ['http'],
+  query: ['json', 'influxql'],
+  license: 'apache-2.0'
+}
 
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-exports.default = Khronus;
+export { khronus }

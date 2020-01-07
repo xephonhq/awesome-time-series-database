@@ -1,13 +1,14 @@
-const Atlas = {
-  name: 'Atlas',
+let atlas = {
+  name: 'atlas',
+  displayName: 'Atlas',
+  website: 'https://github.com/Netflix/atlas',
   github: 'https://github.com/Netflix/atlas',
-  url: 'https://github.com/Netflix/atlas',
-  description: 'In-memory dimensional time series database designed at Netflix',
-  language: 'Scala',
-  backends: ['Memory']
-};
+  status: 'maintained',
+  lang: 'scala',
+  backend: ['memory'],
+  protocol: ['http'],
+  query: ['stack'],
+  license: 'apache-2.0'
+}
 
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-exports.default = Atlas;
+export { atlas }

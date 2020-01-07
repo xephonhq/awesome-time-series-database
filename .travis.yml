@@ -6,4 +6,5 @@ before_install:
   - make generate
 install:
   - yarn install # npm ci
+script:
   - make build

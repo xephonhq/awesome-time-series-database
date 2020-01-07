@@ -18,7 +18,8 @@ cd /tmp/repo && git checkout gh-pages && git status
 
 # Sync build
 # https://stackoverflow.com/questions/23698183/how-to-force-cp-to-overwrite-directory-instead-of-creating-another-one-inside
-rsync -avh --delete "${DIST_PATH}" /tmp/repo/
+# NOTE: we can't --delete because we need to keep .git
+rsync -avh "${DIST_PATH}" /tmp/repo/
 git status
 
 # Commit and push

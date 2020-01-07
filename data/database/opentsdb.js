@@ -3,7 +3,7 @@ let opentsdb = {
   displayName: 'OpenTSDB',
   website: 'http://opentsdb.net/',
   github: 'https://github.com/OpenTSDB/opentsdb',
-  status: 'active',
+  status: 'maintained',
   lang: 'java',
   backend: [
     'hbase'

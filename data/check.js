@@ -11,6 +11,8 @@ function checkDatabases () {
       continue
     }
 
+    // TODO: check for docs/database/{name}.md
+
     let name = db.name
     for (const col of databaseSchema) {
       let val = db[col.name]

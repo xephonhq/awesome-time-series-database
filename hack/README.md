@@ -1,14 +1,20 @@
 # Hack awesome time series database
 
-
 ## TODO
 
 - [x] support filter in array e.g. backends
 
 ## Commands
 
+You need to have nodejs and yarn installed.
+
 ```bash
+# run the website locally
 yarn docs:dev
+# check data
+make check
+# generate README.md
+make generate
 ```
 
 ## Naming
@@ -18,14 +24,16 @@ yarn docs:dev
 
 ## Schema
 
+NOTE: format markdown table using http://markdowntable.com/
+
 Database
 
 | name        | desc                                                        |
 |-------------|-------------------------------------------------------------|
 | name        | unique name in lowercase, used as id                        |
 | displayName | official name                                               |
-| website |                                             |
-| github | open source code (if any)                                              |
+| website     |                                                             |
+| github      | open source code (if any)                                   |
 | status      | is the project dead or alive                                |
 | lang        | programming language(s)                                     |
 | backend     | storage layer of database, other db, local fs, object store |

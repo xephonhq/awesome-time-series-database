@@ -1,18 +1,28 @@
 // TODO: add the following properties
+// - data model
+// - compression
+// - format, row. column, b+, lsm ... (how to describe them ...
 // - cloud provider, i.e. some host solution only runs on one platform
+
+// TODO: clean up md generator logic, we now have
+// - md: false to exclude the column in readme
+// - mdname: to use another name as generated md table header
 
 let databaseSchema = [
   {
     name: 'name',
-    type: 'value'
+    type: 'value',
+    md: false,
   },
   {
     name: 'displayName',
-    type: 'value'
+    type: 'value',
+    mdname: 'name',
   },
   {
     name: 'website',
-    type: 'value'
+    type: 'value',
+    md: false,
   },
   {
     name: 'github',
@@ -34,9 +44,11 @@ let databaseSchema = [
       'c',
       'c++',
       'go',
+      'haskell',
       'java',
       'python',
       'rust',
+      'scala'
     ]
   },
   {
@@ -58,10 +70,11 @@ let databaseSchema = [
     type: 'array',
     values: [
       'prometheus',
-      'grpc',
       'http',
       'tcp',
-      'udp'
+      'udp',
+      'grpc',
+      'thrift'
     ]
   },
   {
@@ -69,10 +82,13 @@ let databaseSchema = [
     type: 'array',
     values: [
       'sql',
+      'text',
       'json',
       'promql',
       'influxql',
-      'flux'
+      'flux',
+      'stack', // https://github.com/Netflix/atlas/wiki/Stack-Language
+      'thrift',
     ]
   },
   {
@@ -83,6 +99,8 @@ let databaseSchema = [
       'gpl',
       'lgpl',
       'mit',
+      'bsd',
+      'unknown'
     ]
   }
 ]

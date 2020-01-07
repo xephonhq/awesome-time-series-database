@@ -2,5 +2,10 @@
 dev:
 	yarn run docs:dev
 
+NODE=node --no-warnings
+
+generate: check
+	cd data && $(NODE) generate.js
+
 check:
-	cd data && node --no-warnings check.js
+	cd data && $(NODE) check.js

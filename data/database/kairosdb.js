@@ -3,7 +3,7 @@ let kairosdb = {
   displayName: 'KairosDB',
   website: 'https://kairosdb.github.io/',
   github: 'https://github.com/kairosdb/kairosdb',
-  status: 'active',
+  status: 'maintained',
   lang: 'java',
   backend: [
     'cassandra'

@@ -29,6 +29,7 @@ git config user.email "${COMMIT_EMAIL}"
 git config user.name "${COMMIT_NAME}"
 git add -A .
 git commit -m "Deplo from ${GITHUB_SHA}"
-git push "${REPO_PATH}:gh-pages"
+# https://github.com/ad-m/github-push-action/blob/master/start.sh#L29
+git push "${REPO_PATH}" "HEAD:gh-pages"
 
 echo "deployed"

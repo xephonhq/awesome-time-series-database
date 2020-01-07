@@ -1,13 +1,14 @@
-const Blueflood = {
-  name: 'Blueflood',
+let blueflood = {
+  name: 'blueflood',
+  displayName: 'Blueflood',
+  website: 'http://blueflood.io/',
   github: 'https://github.com/rackerlabs/blueflood',
-  url: 'http://blueflood.io/',
-  description: 'distributed system designed to ingest and process time series data built by rackspace',
-  language: 'Java',
-  backends: ['Cassandra', 'Elasticsearch']
-};
+  status: 'dead',
+  lang: 'java',
+  backend: ['cassandra', 'elasticsearch'],
+  protocol: ['http'],
+  query: ['json'],
+  license: 'apache-2.0'
+}
 
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-exports.default = Blueflood;
+export { blueflood }

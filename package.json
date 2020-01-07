@@ -1,48 +1,12 @@
 {
-  "name": "awesome-time-series-database",
-  "version": "0.1.0",
-  "description": "A curated list of awesome time series databases, benchmark tools, blog and published papers",
-  "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "pregenerate": "node generate.js",
-    "generate": "nuxt generate",
-    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xephonhq/awesome-time-series-database.git"
-  },
-  "keywords": [
-    "time series",
-    "database",
-    "distributed systems",
-    "awesome"
-  ],
-  "author": "at15@outlook.com",
-  "license": "SEE LICENSE IN http://creativecommons.org/publicdomain/zero/1.0/",
-  "bugs": {
-    "url": "https://github.com/xephonhq/awesome-time-series-database/issues"
-  },
-  "homepage": "https://github.com/xephonhq/awesome-time-series-database#readme",
   "devDependencies": {
-    "@nuxtjs/google-analytics": "latest",
-    "babel-eslint": "^7.1.1",
-    "eslint": "^4.7.2",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.6.1",
-    "eslint-plugin-html": "^3.2.2",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.0",
-    "eslint-plugin-promise": "^3.4.1",
-    "eslint-plugin-standard": "^3.0.1",
-    "handlebars": "^4.0.5",
-    "lodash": "^4.15.0",
-    "nuxt": "^1.0.0-rc11",
-    "winston": "^2.3.1"
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "@vuepress/plugin-google-analytics": "^1.2.0",
+    "vuepress": "^1.2.0"
   }
 }

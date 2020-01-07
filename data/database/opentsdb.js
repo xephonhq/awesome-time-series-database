@@ -1,13 +1,21 @@
-const OpenTSDB = {
-  name: 'OpenTSDB',
+let opentsdb = {
+  name: 'opentsdb',
+  displayName: 'OpenTSDB',
+  website: 'http://opentsdb.net/',
   github: 'https://github.com/OpenTSDB/opentsdb',
-  url: 'http://opentsdb.net/',
-  description: 'Classical time series database on top of HBase. Now support Cassandra and Bigtable.',
-  language: 'Java',
-  backends: ['HBase', 'Bigtable', 'Cassandra']
-};
+  status: 'maintained',
+  lang: 'java',
+  backend: [
+    'hbase'
+  ],
+  protocol: [
+    'http',
+    'tcp'
+  ],
+  query: [
+    'json'
+  ],
+  license: 'lgpl'
+}
 
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-exports.default = OpenTSDB;
+export { opentsdb }

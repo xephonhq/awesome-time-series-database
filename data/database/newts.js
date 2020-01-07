@@ -1,13 +1,15 @@
-const Newts = {
-  name: 'Newts',
+let newts = {
+  name: 'newts',
+  displayName: 'Newts',
+  website: 'http://opennms.github.io/newts/',
   github: 'https://github.com/OpenNMS/newts/',
-  url: 'http://opennms.github.io/newts/',
-  description: 'a time-series data store support searching metadata',
-  language: 'Java',
-  backends: ['Cassandra']
-};
+  status: 'maintained',
+  lang: 'java',
+  backend: ['cassandra'],
+  // TODO: double check protocol and query
+  protocol: ['http'],
+  query: ['json'],
+  license: 'apache-2.0'
+}
 
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-exports.default = Newts;
+export { newts }

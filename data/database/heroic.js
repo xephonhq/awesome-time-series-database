@@ -1,14 +1,22 @@
-const Heroic = {
-  name: 'Heroic',
+let heroic = {
+  name: 'heroic',
+  displayName: 'Heroic',
+  website: 'https://spotify.github.io/heroic/',
   github: 'https://github.com/spotify/heroic',
-  url: 'https://spotify.github.io/heroic/',
-  description: 'Scalable time series database based on Bigtable, Cassandra, and Elasticsearch',
-  language: 'Java',
-  backends: ['Cassandra', 'HBase', 'Bigtable', 'Elasticsearch'],
-  links: {'Monitoring at Spotify - Introducing Heroic': 'https://labs.spotify.com/2015/11/17/monitoring-at-spotify-introducing-heroic/'}
-};
+  status: 'maintained',
+  lang: 'java',
+  backend: [
+    'bigtable',
+    'cassandra',
+    'elasticsearch'
+  ],
+  protocol: [
+    'http'
+  ],
+  query: [
+    'json'
+  ],
+  license: 'apache-2.0'
+}
 
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-exports.default = Heroic;
+export { heroic }

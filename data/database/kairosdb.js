@@ -1,13 +1,20 @@
-const KairosDB = {
-  name: 'KairosDB',
+let kairosdb = {
+  name: 'kairosdb',
+  displayName: 'KairosDB',
+  website: 'https://kairosdb.github.io/',
   github: 'https://github.com/kairosdb/kairosdb',
-  url: 'https://kairosdb.github.io/',
-  description: 'Fast Time Series Database on Cassandra',
-  language: 'Java',
-  backends: ['Cassandra']
-};
+  status: 'maintained',
+  lang: 'java',
+  backend: [
+    'cassandra'
+  ],
+  protocol: [
+    'http'
+  ],
+  query: [
+    'json'
+  ],
+  license: 'apache-2.0'
+}
 
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-exports.default = KairosDB;
+export { kairosdb }

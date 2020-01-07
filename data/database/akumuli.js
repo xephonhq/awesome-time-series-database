@@ -1,16 +1,14 @@
-const Akumuli = {
-  name: 'Akumuli',
+let akumuli = {
+  name: 'akumuli',
+  displayName: 'Akumuli',
+  website: 'http://akumuli.org/',
   github: 'https://github.com/akumuli/Akumuli',
-  url: 'http://akumuli.org/',
-  description: 'a numeric time series database that can be used to capture, store and process time-series data in real-time.',
-  language: 'C++',
-  backends: ['HDD', 'SSD'],
-  tags: ['LSM Tree'],
-  links: {'Akumuli Markedly Outperforms InfluxDB in Time-Series Data & Metrics Benchmark': 'http://akumuli.org/akumuli/2017/01/24/benchmark/'}
+  status: 'maintained',
+  lang: 'c++',
+  backend: ['localfs'],
+  protocol: ['tcp'], // TODO: it's redis like text protocol
+  query: ['text'],
+  license: 'apache-2.0'
+}
 
-};
-
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-exports.default = Akumuli;
+export { akumuli }

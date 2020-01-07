@@ -1,13 +1,15 @@
-const Beringei = {
-  name: 'Beringei',
-  github: 'https://github.com/facebookincubator/beringei',
-  url: 'https://github.com/facebookincubator/beringei',
-  description: 'A high performance, in memory time series storage engine designed by Facebook',
-  language: 'C++',
-  backends: ['Memory']
-};
+let beringei = {
+  name: 'beringei',
+  // TODO: add alias? it is actually gorilla
+  displayName: 'Beringei',
+  website: 'https://github.com/facebookarchive/beringei',
+  github: 'https://github.com/facebookarchive/beringei',
+  status: 'dead',
+  lang: 'c++',
+  backend: ['memory'],
+  protocol: ['thrift'],
+  query: ['thrift'],
+  license: 'bsd'
+}
 
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-exports.default = Beringei;
+export { beringei }

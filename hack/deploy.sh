@@ -7,6 +7,7 @@ echo "arg is $1"
 
 # Build
 git status
+mv docs/.vuepress/dist/config.gh.js docs/.vuepress/dist/config.js
 make build
 DIST_PATH="$(pwd)/docs/.vuepress/dist/"
 
@@ -19,7 +20,7 @@ echo "${ACTIONS_DEPLOY_KEY}" > "${SSH_DIR}/id_rsa"
 chmod 400 "${SSH_DIR}/id_rsa"
 
 # Clone gh-pages
-REPO_PATH="git@github.com/${GITHUB_REPOSITORY}.git"
+REPO_PATH="git@github.com:${GITHUB_REPOSITORY}.git"
 # https://github.com/grasilife/github-pages-deploy-action/blob/master/entrypoint.sh#L63
 #REPO_PATH="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 cd /tmp && git clone "${REPO_PATH}" repo

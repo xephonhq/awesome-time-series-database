@@ -3,6 +3,7 @@ import { databaseSchema } from './schema.js'
 import { akumuli } from './akumuli.js'
 import { atlas } from './atlas.js'
 import { beringei } from './beringei.js'
+import { biggraphite } from './biggraphite.js'
 import { blueflood } from './blueflood.js'
 import { btrdb } from './btrdb.js'
 import { catena } from './catena.js'
@@ -25,6 +26,7 @@ let databases = [
   akumuli,
   atlas,
   beringei,
+  biggraphite,
   blueflood,
   btrdb,
   catena,

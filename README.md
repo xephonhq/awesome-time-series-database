@@ -12,6 +12,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Akumuli|https://github.com/akumuli/Akumuli|maintained|c++|localfs|tcp|text|apache-2.0|
 |Atlas|https://github.com/Netflix/atlas|maintained|scala|memory|http|stack|apache-2.0|
 |Beringei|https://github.com/facebookarchive/beringei|dead|c++|memory|thrift|thrift|bsd|
+|BigGraphite|https://github.com/criteo/biggraphite|maintained|python|cassandra|http|graphite|apache-2.0|
 |Blueflood|https://github.com/rackerlabs/blueflood|dead|java|cassandra,elasticsearch|http|json|apache-2.0|
 |BTrDB|https://github.com/BTrDB/btrdb-server|maintained|go|ceph|http|json|gpl|
 |Catena|https://github.com/Cistern/catena|dead|go|localfs|http|json|bsd|
@@ -25,6 +26,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |OpenTSDB|https://github.com/OpenTSDB/opentsdb|maintained|java|hbase|http,tcp|json|lgpl|
 |Prometheus|https://github.com/prometheus/prometheus|active|go|localfs|prometheus|promql|apache-2.0|
 |Seriously|https://github.com/dustin/seriesly|dead|go|localfs|http|json|mit|
+|Tgres|https://github.com/tgres/tgres|dead|go|postgresql|tcp|sql|apache-2.0|
 |TimescaleDB|https://github.com/timescale/timescaledb|active|c|postgresql|tcp|sql|apache-2.0|
 |Vaultaire|https://github.com/afcowie/vaultaire|dead|haskell|ceph|http|json|unknown|
 |Xephon-K|https://github.com/xephonhq/xephon-k|dead|go|cassandra,localfs|http,grpc|json|mit|

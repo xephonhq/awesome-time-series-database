@@ -88,6 +88,7 @@ let databaseSchema = [
       'sql',
       'text',
       'json',
+      'graphite',
       'promql',
       'influxql',
       'flux',

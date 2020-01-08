@@ -8,7 +8,13 @@ let hawkularmetrics = {
   backend: ['cassandra'],
   protocol: ['http'],
   query: ['json'],
-  license: 'apache-2.0'
+  license: 'apache-2.0',
+  author: [
+    'tsegismont'
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { hawkularmetrics }

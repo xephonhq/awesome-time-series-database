@@ -7,6 +7,7 @@
 // TODO: clean up md generator logic, we now have
 // - md: false to exclude the column in readme
 // - mdname: to use another name as generated md table header
+// And we need things like [displayName](github) when formatting README
 
 let databaseSchema = [
   {
@@ -102,6 +103,16 @@ let databaseSchema = [
       'bsd',
       'unknown'
     ]
+  },
+  {
+    name: 'author',
+    type: 'array',
+    md: false,
+  },
+  {
+    name: 'contributedBy',
+    type: 'array',
+    md: false
   }
 ]
 

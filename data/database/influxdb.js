@@ -15,7 +15,16 @@ let influxdb = {
     'influxql',
     'flux'
   ],
-  license: 'mit'
+  license: 'mit',
+  author: [
+    'pauldix', // founder
+    'benbjohnson', // author of boltdb
+    'jwilder', // now at azure
+    'otoolep', // now at google working on stack driver, http://www.philipotoole.com/resume/
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { influxdb }

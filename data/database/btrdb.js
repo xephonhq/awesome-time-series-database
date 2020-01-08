@@ -8,7 +8,13 @@ let btrdb = {
   backend: ['ceph'],
   protocol: ['http'], // TODO: not really sure about its protocol and query language
   query: ['json'],
-  license: 'gpl'
+  license: 'gpl',
+  author: [
+    'immesys'
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { btrdb }

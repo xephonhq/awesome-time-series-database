@@ -16,7 +16,14 @@ let heroic = {
   query: [
     'json'
   ],
-  license: 'apache-2.0'
+  license: 'apache-2.0',
+  author: [
+    'udoprog',
+    'hexedpackets'
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { heroic }

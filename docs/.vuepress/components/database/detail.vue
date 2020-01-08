@@ -10,17 +10,21 @@
             <li>Protocol: {{ db.protocol }}</li>
             <li>Query: {{ db.query }}</li>
             <li>License: {{ db.license }}</li>
+            <li>Author: <a v-for="u in db.author" v-bind:href="'https://github.com/' + u" target="_blank">{{ u }}&nbsp;</a>
+            </li>
+            <li>Contributed by: <a v-for="u in db.contributedBy" v-bind:href="'https://github.com/' + u"
+                                   target="_blank">{{ u }}</a></li>
         </ul>
     </div>
 </template>
 
 <script>
   import { databases } from '../../../../data/database'
-  
+
   export default {
     name: 'database-detail',
     props: ['dbname'],
-    data() {
+    data () {
       // console.log('dbname', this.dbname)
       let selectedDB = {
         name: 'database not found'

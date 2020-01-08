@@ -9,7 +9,13 @@ let beringei = {
   backend: ['memory'],
   protocol: ['thrift'],
   query: ['thrift'],
-  license: 'bsd'
+  license: 'bsd',
+  author: [
+    'scottfranklin'
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { beringei }

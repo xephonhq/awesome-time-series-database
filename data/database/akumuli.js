@@ -8,7 +8,13 @@ let akumuli = {
   backend: ['localfs'],
   protocol: ['tcp'], // TODO: it's redis like text protocol
   query: ['text'],
-  license: 'apache-2.0'
+  license: 'apache-2.0',
+  author: [
+    'Lazin'
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { akumuli }

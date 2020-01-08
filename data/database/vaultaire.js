@@ -9,7 +9,14 @@ let vaultaire = {
   // TODO: double check protocol and query
   protocol: ['http'],
   query: ['json'],
-  license: 'unknown'
+  license: 'unknown',
+  author: [
+    'afcowie',
+    'christian-marie'
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { vaultaire }

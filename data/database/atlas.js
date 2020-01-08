@@ -8,7 +8,13 @@ let atlas = {
   backend: ['memory'],
   protocol: ['http'],
   query: ['stack'],
-  license: 'apache-2.0'
+  license: 'apache-2.0',
+  author: [
+    'brharrington'
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { atlas }

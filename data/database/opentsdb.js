@@ -15,7 +15,14 @@ let opentsdb = {
   query: [
     'json'
   ],
-  license: 'lgpl'
+  license: 'lgpl',
+  author: [
+    'manolama',
+    'tsuna'
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { opentsdb }

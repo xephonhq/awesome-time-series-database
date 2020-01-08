@@ -9,7 +9,14 @@ let khronus = {
   // TODO: double check protocol and query
   protocol: ['http'],
   query: ['json', 'influxql'],
-  license: 'apache-2.0'
+  license: 'apache-2.0',
+  author: [
+    'demianberjman',
+    'pablosmedina'
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { khronus }

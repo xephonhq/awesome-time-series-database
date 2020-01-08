@@ -14,7 +14,13 @@ let kairosdb = {
   query: [
     'json'
   ],
-  license: 'apache-2.0'
+  license: 'apache-2.0',
+  author: [
+    'brianhks'
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { kairosdb }

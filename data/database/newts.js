@@ -9,7 +9,14 @@ let newts = {
   // TODO: double check protocol and query
   protocol: ['http'],
   query: ['json'],
-  license: 'apache-2.0'
+  license: 'apache-2.0',
+  author: [
+    'eevans',
+    'j-white'
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { newts }

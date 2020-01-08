@@ -16,7 +16,13 @@ let xephonk = {
   query: [
     'json'
   ],
-  license: 'mit'
+  license: 'mit',
+  author: [
+    'at15',
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { xephonk }

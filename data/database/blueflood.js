@@ -8,7 +8,14 @@ let blueflood = {
   backend: ['cassandra', 'elasticsearch'],
   protocol: ['http'],
   query: ['json'],
-  license: 'apache-2.0'
+  license: 'apache-2.0',
+  author: [
+    'izrik',
+    'gdusbabek'
+  ],
+  contributedBy: [
+    'at15'
+  ]
 }
 
 export { blueflood }

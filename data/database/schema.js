@@ -2,6 +2,7 @@
 // - data model
 // - compression
 // - format, row. column, b+, lsm ... (how to describe them ...
+// - distributed
 // - cloud provider, i.e. some host solution only runs on one platform
 
 // TODO: clean up md generator logic, we now have
@@ -64,6 +65,7 @@ let databaseSchema = [
       'memory',
       'localfs',
       's3',
+      'spark'
     ]
   },
   {

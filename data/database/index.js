@@ -6,6 +6,7 @@ import { beringei } from './beringei.js'
 import { blueflood } from './blueflood.js'
 import { btrdb } from './btrdb.js'
 import { catena } from './catena.js'
+import { flint } from './flint.js'
 import { hawkularmetrics } from './hawkularmetrics.js'
 import { heroic } from './heroic.js'
 import { influxdb } from './influxdb.js'
@@ -25,6 +26,7 @@ let databases = [
   blueflood,
   btrdb,
   catena,
+  flint,
   hawkularmetrics,
   heroic,
   influxdb,

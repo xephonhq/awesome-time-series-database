@@ -45,6 +45,7 @@ let databaseSchema = [
     values: [
       'c',
       'c++',
+      'erlang',
       'go',
       'haskell',
       'java',

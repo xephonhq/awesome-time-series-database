@@ -7,6 +7,7 @@ import { biggraphite } from './biggraphite.js'
 import { blueflood } from './blueflood.js'
 import { btrdb } from './btrdb.js'
 import { catena } from './catena.js'
+import { dalmatinerdb } from './dalmatinerdb.js'
 import { flint } from './flint.js'
 import { hawkularmetrics } from './hawkularmetrics.js'
 import { heroic } from './heroic.js'
@@ -30,6 +31,7 @@ let databases = [
   blueflood,
   btrdb,
   catena,
+  dalmatinerdb,
   flint,
   hawkularmetrics,
   heroic,

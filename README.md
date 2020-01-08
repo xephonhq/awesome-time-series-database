@@ -16,6 +16,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Blueflood|https://github.com/rackerlabs/blueflood|dead|java|cassandra,elasticsearch|http|json|apache-2.0|
 |BTrDB|https://github.com/BTrDB/btrdb-server|maintained|go|ceph|http|json|gpl|
 |Catena|https://github.com/Cistern/catena|dead|go|localfs|http|json|bsd|
+|DalmatinerDB|https://github.com/dalmatinerdb/dalmatinerdb|maintained|erlang|localfs|http|text|mit|
 |Flint|https://github.com/twosigma/flint|maintained|scala|spark|http|json|apache-2.0|
 |HawkularMertics|https://github.com/hawkular/hawkular-metrics|maintained|java|cassandra|http|json|apache-2.0|
 |Heroic|https://github.com/spotify/heroic|maintained|java|bigtable,cassandra,elasticsearch|http|json|apache-2.0|
@@ -40,6 +41,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 - [awesome db](https://github.com/numetriclabz/awesome-db)
 - [Ultimate-TSDB-Comparison](https://tsdbbench.github.io/Ultimate-TSDB-Comparison/)
 - [Github topic: timeseries-database](https://github.com/topics/timeseries-database)
+- [Open Source Time Series DB Comparison](https://docs.google.com/spreadsheets/d/1sMQe9oOKhMhIVw9WmuCEWdPtAoccJ4a-IuZv4fXDHxM/edit#gid=0)
 
 ## License
 

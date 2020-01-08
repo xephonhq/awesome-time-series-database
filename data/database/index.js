@@ -16,7 +16,8 @@ import { newts } from './newts.js'
 import { opentsdb } from './opentsdb.js'
 import { prometheus } from './prometheus.js'
 import { seriously } from './seriously.js'
-import { timescaldb} from './timescaledb.js'
+import { tgres } from './tgres.js'
+import { timescaldb } from './timescaledb.js'
 import { vaultaire } from './vaultaire.js'
 import { xephonk } from './xephonk.js'
 
@@ -37,6 +38,7 @@ let databases = [
   opentsdb,
   prometheus,
   seriously,
+  tgres,
   timescaldb,
   vaultaire,
   xephonk,

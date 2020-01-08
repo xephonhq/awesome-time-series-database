@@ -14,6 +14,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Beringei|https://github.com/facebookarchive/beringei|dead|c++|memory|thrift|thrift|bsd|
 |Blueflood|https://github.com/rackerlabs/blueflood|dead|java|cassandra,elasticsearch|http|json|apache-2.0|
 |BTrDB|https://github.com/BTrDB/btrdb-server|maintained|go|ceph|http|json|gpl|
+|Catena|https://github.com/Cistern/catena|dead|go|localfs|http|json|bsd|
 |HawkularMertics|https://github.com/hawkular/hawkular-metrics|maintained|java|cassandra|http|json|apache-2.0|
 |Heroic|https://github.com/spotify/heroic|maintained|java|bigtable,cassandra,elasticsearch|http|json|apache-2.0|
 |InfluxDB|https://github.com/influxdata/influxdb|active|go|localfs|http|influxql,flux|mit|

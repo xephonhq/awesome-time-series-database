@@ -4,6 +4,7 @@
 
 - [ ] add pending databases
 - [ ] update url based on query filter
+- [ ] don't show dead database (or split them in both front page and generated readme)
 - [ ] clean up issue template
 - [ ] support paper and benchmarks
 - [ ] separate github action to its own repo

@@ -3,6 +3,7 @@
 ## TODO
 
 - [ ] add pending databases
+- [ ] update url based on query filter
 - [ ] clean up issue template
 - [ ] support paper and benchmarks
 - [ ] separate github action to its own repo

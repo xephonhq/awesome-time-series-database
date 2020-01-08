@@ -13,6 +13,7 @@ import { khronus } from './khronus.js'
 import { newts } from './newts.js'
 import { opentsdb } from './opentsdb.js'
 import { prometheus } from './prometheus.js'
+import { seriously } from './seriously.js'
 import { vaultaire } from './vaultaire.js'
 import { xephonk } from './xephonk.js'
 
@@ -30,6 +31,7 @@ let databases = [
   newts,
   opentsdb,
   prometheus,
+  seriously,
   vaultaire,
   xephonk,
 ]

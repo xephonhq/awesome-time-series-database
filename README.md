@@ -22,6 +22,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Newts|https://github.com/OpenNMS/newts/|maintained|java|cassandra|http|json|apache-2.0|
 |OpenTSDB|https://github.com/OpenTSDB/opentsdb|maintained|java|hbase|http,tcp|json|lgpl|
 |Prometheus|https://github.com/prometheus/prometheus|active|go|localfs|prometheus|promql|apache-2.0|
+|Seriously|https://github.com/dustin/seriesly|dead|go|localfs|http|json|mit|
 |Vaultaire|https://github.com/afcowie/vaultaire|dead|haskell|ceph|http|json|unknown|
 |Xephon-K|https://github.com/xephonhq/xephon-k|dead|go|cassandra,localfs|http,grpc|json|mit|
 

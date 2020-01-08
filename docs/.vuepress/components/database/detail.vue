@@ -13,7 +13,7 @@
             <li>Author: <a v-for="u in db.author" v-bind:href="'https://github.com/' + u" target="_blank">{{ u }}&nbsp;</a>
             </li>
             <li>Contributed by: <a v-for="u in db.contributedBy" v-bind:href="'https://github.com/' + u"
-                                   target="_blank">{{ u }}</a></li>
+                                   target="_blank">{{ u }}&nbsp;</a></li>
         </ul>
     </div>
 </template>

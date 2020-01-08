@@ -15,6 +15,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Blueflood|https://github.com/rackerlabs/blueflood|dead|java|cassandra,elasticsearch|http|json|apache-2.0|
 |BTrDB|https://github.com/BTrDB/btrdb-server|maintained|go|ceph|http|json|gpl|
 |Catena|https://github.com/Cistern/catena|dead|go|localfs|http|json|bsd|
+|Flint|https://github.com/twosigma/flint|maintained|scala|spark|http|json|apache-2.0|
 |HawkularMertics|https://github.com/hawkular/hawkular-metrics|maintained|java|cassandra|http|json|apache-2.0|
 |Heroic|https://github.com/spotify/heroic|maintained|java|bigtable,cassandra,elasticsearch|http|json|apache-2.0|
 |InfluxDB|https://github.com/influxdata/influxdb|active|go|localfs|http|influxql,flux|mit|
@@ -24,6 +25,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |OpenTSDB|https://github.com/OpenTSDB/opentsdb|maintained|java|hbase|http,tcp|json|lgpl|
 |Prometheus|https://github.com/prometheus/prometheus|active|go|localfs|prometheus|promql|apache-2.0|
 |Seriously|https://github.com/dustin/seriesly|dead|go|localfs|http|json|mit|
+|TimescaleDB|https://github.com/timescale/timescaledb|active|c|postgresql|tcp|sql|apache-2.0|
 |Vaultaire|https://github.com/afcowie/vaultaire|dead|haskell|ceph|http|json|unknown|
 |Xephon-K|https://github.com/xephonhq/xephon-k|dead|go|cassandra,localfs|http,grpc|json|mit|
 

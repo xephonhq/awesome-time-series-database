@@ -65,7 +65,8 @@ let databaseSchema = [
       'memory',
       'localfs',
       's3',
-      'spark'
+      'spark',
+      'postgresql'
     ]
   },
   {

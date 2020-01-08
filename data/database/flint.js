@@ -9,7 +9,7 @@ let flint = {
   // TODO: double check protocol and query
   protocol: ['http'],
   query: ['json'],
-  license: '',
+  license: 'apache-2.0',
   author: [
     'icexelloss',
     'WenboZhao'

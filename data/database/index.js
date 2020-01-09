@@ -17,6 +17,7 @@ import { kairosdb } from './kairosdb.js'
 import { khronus } from './khronus.js'
 import { newts } from './newts.js'
 import { opentsdb } from './opentsdb.js'
+import { pinot } from './pinot.js'
 import { prometheus } from './prometheus.js'
 import { seriously } from './seriously.js'
 import { tgres } from './tgres.js'
@@ -42,6 +43,7 @@ let databases = [
   khronus,
   newts,
   opentsdb,
+  pinot,
   prometheus,
   seriously,
   tgres,

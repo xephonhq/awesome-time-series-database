@@ -67,7 +67,9 @@ let databaseSchema = [
       'localfs',
       's3',
       'spark',
-      'postgresql'
+      'postgresql',
+      'hdfs',
+      'azdls', // https://azure.microsoft.com/en-us/services/storage/data-lake-storage/
     ]
   },
   {
@@ -95,6 +97,7 @@ let databaseSchema = [
       'flux',
       'stack', // https://github.com/Netflix/atlas/wiki/Stack-Language
       'thrift',
+      'pql', // https://pinot.readthedocs.io/en/latest/pql_examples.html
     ]
   },
   {

@@ -67,6 +67,7 @@ let databaseSchema = [
       'memory',
       'localfs',
       's3',
+      'dynamodb',
       'spark',
       'postgresql',
       'hdfs',

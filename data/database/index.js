@@ -28,6 +28,7 @@ import { seriously } from './seriously.js'
 import { tgres } from './tgres.js'
 import { timescaldb } from './timescaledb.js'
 import { vaultaire } from './vaultaire.js'
+import { vulcan } from './vulcan.js'
 import { xephonk } from './xephonk.js'
 
 let databases = [
@@ -59,6 +60,7 @@ let databases = [
   tgres,
   timescaldb,
   vaultaire,
+  vulcan,
   xephonk,
 ]
 

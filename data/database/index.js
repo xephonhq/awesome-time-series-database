@@ -1,6 +1,7 @@
 import { databaseSchema } from './schema.js'
 
 import { akumuli } from './akumuli.js'
+import { argus } from './argus.js'
 import { atlas } from './atlas.js'
 import { beringei } from './beringei.js'
 import { biggraphite } from './biggraphite.js'
@@ -34,6 +35,7 @@ import { xephonk } from './xephonk.js'
 
 let databases = [
   akumuli,
+  argus,
   atlas,
   beringei,
   biggraphite,

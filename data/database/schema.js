@@ -71,6 +71,7 @@ let databaseSchema = [
       'postgresql',
       'hdfs',
       'azdls', // https://azure.microsoft.com/en-us/services/storage/data-lake-storage/
+      'solr'
     ]
   },
   {

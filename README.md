@@ -16,6 +16,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Blueflood|https://github.com/rackerlabs/blueflood|dead|java|cassandra,elasticsearch|http|json|apache-2.0|
 |BTrDB|https://github.com/BTrDB/btrdb-server|maintained|go|ceph|http|json|gpl|
 |Catena|https://github.com/Cistern/catena|dead|go|localfs|http|json|bsd|
+|Chronix|https://github.com/ChronixDB/chronix.server|maintained|java|solr|http|json|apache-2.0|
 |Citus|https://github.com/citusdata/citus|active|c|postgresql|tcp|sql|agpl-3.0|
 |ClickHouse|https://github.com/ClickHouse/ClickHouse|active|c++|localfs|tcp|sql|apache-2.0|
 |DalmatinerDB|https://github.com/dalmatinerdb/dalmatinerdb|maintained|erlang|localfs|http|text|mit|

@@ -4,6 +4,7 @@
 // - format, row. column, b+, lsm ... (how to describe them ...
 // - distributed
 // - cloud provider, i.e. some host solution only runs on one platform
+// - company, some are backed by startup (influxdb), some has people start a new startup from it (m3)
 
 // TODO: clean up md generator logic, we now have
 // - md: false to exclude the column in readme
@@ -98,6 +99,7 @@ let databaseSchema = [
       'stack', // https://github.com/Netflix/atlas/wiki/Stack-Language
       'thrift',
       'pql', // https://pinot.readthedocs.io/en/latest/pql_examples.html
+      'm3query', // http://m3db.github.io/m3/how_to/query/
     ]
   },
   {

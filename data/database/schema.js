@@ -1,4 +1,5 @@
 // TODO: add the following properties
+// - logo url
 // - data model
 // - compression
 // - format, row. column, b+, lsm ... (how to describe them ...
@@ -73,7 +74,8 @@ let databaseSchema = [
       'hdfs',
       'azdls', // https://azure.microsoft.com/en-us/services/storage/data-lake-storage/
       'solr',
-      'mongodb'
+      'mongodb',
+      'accumulo' // bigtable like on HDFS https://accumulo.apache.org/docs/2.x/getting-started/design
     ]
   },
   {

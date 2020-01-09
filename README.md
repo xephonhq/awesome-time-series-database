@@ -20,11 +20,13 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |ClickHouse|https://github.com/ClickHouse/ClickHouse|active|c++|localfs|tcp|sql|apache-2.0|
 |DalmatinerDB|https://github.com/dalmatinerdb/dalmatinerdb|maintained|erlang|localfs|http|text|mit|
 |Flint|https://github.com/twosigma/flint|maintained|scala|spark|http|json|apache-2.0|
+|Gnocchi|https://github.com/gnocchixyz/gnocchi|dead|python|localfs|http|json|apache-2.0|
 |HawkularMertics|https://github.com/hawkular/hawkular-metrics|maintained|java|cassandra|http|json|apache-2.0|
 |Heroic|https://github.com/spotify/heroic|maintained|java|bigtable,cassandra,elasticsearch|http|json|apache-2.0|
 |InfluxDB|https://github.com/influxdata/influxdb|active|go|localfs|http|influxql,flux|mit|
 |KairosDB|https://github.com/kairosdb/kairosdb|maintained|java|cassandra|http|json|apache-2.0|
 |Khronus|https://github.com/khronus/khronus|dead|scala|cassandra|http|json,influxql|apache-2.0|
+|Metrictank|https://github.com/grafana/metrictank|active|go|cassandra,elasticsearch|http|graphite|agpl-3.0|
 |Newts|https://github.com/OpenNMS/newts/|maintained|java|cassandra|http|json|apache-2.0|
 |OpenTSDB|https://github.com/OpenTSDB/opentsdb|maintained|java|hbase|http,tcp|json|lgpl|
 |Apache Pinot|https://github.com/apache/incubator-pinot|active|java|s3,hdfs,azdls|http|pql|apache-2.0|

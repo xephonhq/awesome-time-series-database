@@ -17,6 +17,7 @@ import { heroic } from './heroic.js'
 import { influxdb } from './influxdb.js'
 import { kairosdb } from './kairosdb.js'
 import { khronus } from './khronus.js'
+import { metrictank } from './metrictank.js'
 import { newts } from './newts.js'
 import { opentsdb } from './opentsdb.js'
 import { pinot } from './pinot.js'
@@ -45,6 +46,7 @@ let databases = [
   influxdb,
   kairosdb,
   khronus,
+  metrictank,
   newts,
   opentsdb,
   pinot,

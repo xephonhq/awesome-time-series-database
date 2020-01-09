@@ -10,6 +10,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |name|github|status|lang|backend|protocol|query|license|
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |Akumuli|https://github.com/akumuli/Akumuli|maintained|c++|localfs|tcp|text|apache-2.0|
+|Argus|https://github.com/salesforce/Argus|dead|java|hbase|http|json|bsd|
 |Atlas|https://github.com/Netflix/atlas|maintained|scala|memory|http|stack|apache-2.0|
 |Beringei|https://github.com/facebookarchive/beringei|dead|c++|memory|thrift|thrift|bsd|
 |BigGraphite|https://github.com/criteo/biggraphite|maintained|python|cassandra|http|graphite|apache-2.0|
@@ -19,6 +20,8 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Chronix|https://github.com/ChronixDB/chronix.server|maintained|java|solr|http|json|apache-2.0|
 |Citus|https://github.com/citusdata/citus|active|c|postgresql|tcp|sql|agpl-3.0|
 |ClickHouse|https://github.com/ClickHouse/ClickHouse|active|c++|localfs|tcp|sql|apache-2.0|
+|Cortex|https://github.com/cortexproject/cortex|active|go|s3,cassandra,bigtable,dynamodb|http|promql|apache-2.0|
+|CrateDB|https://github.com/crate/crate|active|java|elasticsearch,s3|tcp|sql|apache-2.0|
 |DalmatinerDB|https://github.com/dalmatinerdb/dalmatinerdb|maintained|erlang|localfs|http|text|mit|
 |Flint|https://github.com/twosigma/flint|maintained|scala|spark|http|json|apache-2.0|
 |Gnocchi|https://github.com/gnocchixyz/gnocchi|dead|python|localfs|http|json|apache-2.0|

@@ -12,6 +12,7 @@ import { chronix } from './chronix.js'
 import { citus } from './citus.js'
 import { clickhouse } from './clickhouse.js'
 import { cortex } from './cortex.js'
+import { crate } from './crate.js'
 import { dalmatinerdb } from './dalmatinerdb.js'
 import { flint } from './flint.js'
 import { gnocchi } from './gnocchi.js'
@@ -46,6 +47,7 @@ let databases = [
   citus,
   clickhouse,
   cortex,
+  crate,
   dalmatinerdb,
   flint,
   gnocchi,

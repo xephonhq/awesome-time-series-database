@@ -10,6 +10,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |name|github|status|lang|backend|protocol|query|license|
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |Akumuli|https://github.com/akumuli/Akumuli|maintained|c++|localfs|tcp|text|apache-2.0|
+|Arctic|https://github.com/man-group/arctic|active|python|mongodb|tcp|python|lgpl|
 |Argus|https://github.com/salesforce/Argus|dead|java|hbase|http|json|bsd|
 |Atlas|https://github.com/Netflix/atlas|maintained|scala|memory|http|stack|apache-2.0|
 |Beringei|https://github.com/facebookarchive/beringei|dead|c++|memory|thrift|thrift|bsd|
@@ -37,6 +38,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Apache Pinot|https://github.com/apache/incubator-pinot|active|java|s3,hdfs,azdls|http|pql|apache-2.0|
 |Prometheus|https://github.com/prometheus/prometheus|active|go|localfs|prometheus|promql|apache-2.0|
 |Seriously|https://github.com/dustin/seriesly|dead|go|localfs|http|json|mit|
+|Sidewinder|https://github.com/srotya/sidewinder|dead|java|localfs|tcp|sql|apache-2.0|
 |Tgres|https://github.com/tgres/tgres|dead|go|postgresql|tcp|sql|apache-2.0|
 |TimescaleDB|https://github.com/timescale/timescaledb|active|c|postgresql|tcp|sql|apache-2.0|
 |Vaultaire|https://github.com/afcowie/vaultaire|dead|haskell|ceph|http|json|unknown|

@@ -1,6 +1,7 @@
 import { databaseSchema } from './schema.js'
 
 import { akumuli } from './akumuli.js'
+import { arctic } from './arctic.js'
 import { argus } from './argus.js'
 import { atlas } from './atlas.js'
 import { beringei } from './beringei.js'
@@ -28,6 +29,7 @@ import { opentsdb } from './opentsdb.js'
 import { pinot } from './pinot.js'
 import { prometheus } from './prometheus.js'
 import { seriously } from './seriously.js'
+import { sidewinder } from './sidewinder.js'
 import { tgres } from './tgres.js'
 import { timescaldb } from './timescaledb.js'
 import { vaultaire } from './vaultaire.js'
@@ -36,6 +38,7 @@ import { xephonk } from './xephonk.js'
 
 let databases = [
   akumuli,
+  arctic,
   argus,
   atlas,
   beringei,
@@ -63,6 +66,7 @@ let databases = [
   pinot,
   prometheus,
   seriously,
+  sidewinder,
   tgres,
   timescaldb,
   vaultaire,

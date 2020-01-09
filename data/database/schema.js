@@ -72,7 +72,8 @@ let databaseSchema = [
       'postgresql',
       'hdfs',
       'azdls', // https://azure.microsoft.com/en-us/services/storage/data-lake-storage/
-      'solr'
+      'solr',
+      'mongodb'
     ]
   },
   {
@@ -102,6 +103,7 @@ let databaseSchema = [
       'thrift',
       'pql', // https://pinot.readthedocs.io/en/latest/pql_examples.html
       'm3query', // http://m3db.github.io/m3/how_to/query/
+      'python',
     ]
   },
   {

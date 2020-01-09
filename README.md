@@ -16,6 +16,8 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Blueflood|https://github.com/rackerlabs/blueflood|dead|java|cassandra,elasticsearch|http|json|apache-2.0|
 |BTrDB|https://github.com/BTrDB/btrdb-server|maintained|go|ceph|http|json|gpl|
 |Catena|https://github.com/Cistern/catena|dead|go|localfs|http|json|bsd|
+|Citus|https://github.com/citusdata/citus|active|c|postgresql|tcp|sql|agpl-3.0|
+|ClickHouse|https://github.com/ClickHouse/ClickHouse|active|c++|localfs|tcp|sql|apache-2.0|
 |DalmatinerDB|https://github.com/dalmatinerdb/dalmatinerdb|maintained|erlang|localfs|http|text|mit|
 |Flint|https://github.com/twosigma/flint|maintained|scala|spark|http|json|apache-2.0|
 |HawkularMertics|https://github.com/hawkular/hawkular-metrics|maintained|java|cassandra|http|json|apache-2.0|
@@ -25,6 +27,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Khronus|https://github.com/khronus/khronus|dead|scala|cassandra|http|json,influxql|apache-2.0|
 |Newts|https://github.com/OpenNMS/newts/|maintained|java|cassandra|http|json|apache-2.0|
 |OpenTSDB|https://github.com/OpenTSDB/opentsdb|maintained|java|hbase|http,tcp|json|lgpl|
+|Apache Pinot|https://github.com/apache/incubator-pinot|active|java|s3,hdfs,azdls|http|pql|apache-2.0|
 |Prometheus|https://github.com/prometheus/prometheus|active|go|localfs|prometheus|promql|apache-2.0|
 |Seriously|https://github.com/dustin/seriesly|dead|go|localfs|http|json|mit|
 |Tgres|https://github.com/tgres/tgres|dead|go|postgresql|tcp|sql|apache-2.0|

@@ -7,6 +7,7 @@ import { biggraphite } from './biggraphite.js'
 import { blueflood } from './blueflood.js'
 import { btrdb } from './btrdb.js'
 import { catena } from './catena.js'
+import { citus } from './citus.js'
 import { clickhouse } from './clickhouse.js'
 import { dalmatinerdb } from './dalmatinerdb.js'
 import { flint } from './flint.js'
@@ -33,6 +34,7 @@ let databases = [
   blueflood,
   btrdb,
   catena,
+  citus,
   clickhouse,
   dalmatinerdb,
   flint,

@@ -109,6 +109,7 @@ let databaseSchema = [
       'lgpl',
       'mit',
       'bsd',
+      'agpl-3.0',
       'unknown'
     ]
   },

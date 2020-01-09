@@ -11,6 +11,7 @@ import { citus } from './citus.js'
 import { clickhouse } from './clickhouse.js'
 import { dalmatinerdb } from './dalmatinerdb.js'
 import { flint } from './flint.js'
+import { gnocchi } from './gnocchi.js'
 import { hawkularmetrics } from './hawkularmetrics.js'
 import { heroic } from './heroic.js'
 import { influxdb } from './influxdb.js'
@@ -38,6 +39,7 @@ let databases = [
   clickhouse,
   dalmatinerdb,
   flint,
+  gnocchi,
   hawkularmetrics,
   heroic,
   influxdb,

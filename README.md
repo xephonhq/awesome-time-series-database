@@ -40,8 +40,10 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Seriously|https://github.com/dustin/seriesly|dead|go|localfs|http|json|mit|
 |Sidewinder|https://github.com/srotya/sidewinder|dead|java|localfs|tcp|sql|apache-2.0|
 |Tgres|https://github.com/tgres/tgres|dead|go|postgresql|tcp|sql|apache-2.0|
+|Timely|https://github.com/NationalSecurityAgency/timely|maintained|java|hdfs,accumulo|http|json|apache-2.0|
 |TimescaleDB|https://github.com/timescale/timescaledb|active|c|postgresql|tcp|sql|apache-2.0|
 |Vaultaire|https://github.com/afcowie/vaultaire|dead|haskell|ceph|http|json|unknown|
+|VictoriaMetrics|https://github.com/VictoriaMetrics/VictoriaMetrics|active|go|localfs|http|promql,metricsql|apache-2.0|
 |Vulcan|https://github.com/digitalocean/vulcan|dead|go|cassandra|http|promql|apache-2.0|
 |Xephon-K|https://github.com/xephonhq/xephon-k|dead|go|cassandra,localfs|http,grpc|json|mit|
 

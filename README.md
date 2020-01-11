@@ -51,6 +51,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 
 ## Acknowledgement and Alternatives
 
+- [dbdb.io](https://github.com/cmu-db/dbdb.io) A database for all the databases by [@apavlo](https://github.com/apavlo) from [CMU DB](https://db.cs.cmu.edu/)
 - [awesome big data](https://github.com/onurakpolat/awesome-bigdata#time-series-databases)
 - [List of Time Series Databases](https://misfra.me/2016/04/09/tsdb-list/) by [Preetam Jinka](https://twitter.com/PreetamJinka)
 - [awesome db](https://github.com/numetriclabz/awesome-db)

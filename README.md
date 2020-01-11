@@ -42,6 +42,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Tgres|https://github.com/tgres/tgres|dead|go|postgresql|tcp|sql|apache-2.0|
 |TimescaleDB|https://github.com/timescale/timescaledb|active|c|postgresql|tcp|sql|apache-2.0|
 |Vaultaire|https://github.com/afcowie/vaultaire|dead|haskell|ceph|http|json|unknown|
+|VictoriaMetrics|https://github.com/VictoriaMetrics/VictoriaMetrics|active|go|localfs|http|promql|apache-2.0|
 |Vulcan|https://github.com/digitalocean/vulcan|dead|go|cassandra|http|promql|apache-2.0|
 |Xephon-K|https://github.com/xephonhq/xephon-k|dead|go|cassandra,localfs|http,grpc|json|mit|
 

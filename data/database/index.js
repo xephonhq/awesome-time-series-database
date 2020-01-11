@@ -34,6 +34,7 @@ import { timely } from './timely.js'
 import { tgres } from './tgres.js'
 import { timescaldb } from './timescaledb.js'
 import { vaultaire } from './vaultaire.js'
+import { victoriametrics } from './victoriametrics.js'
 import { vulcan } from './vulcan.js'
 import { xephonk } from './xephonk.js'
 
@@ -72,6 +73,7 @@ let databases = [
   timely,
   timescaldb,
   vaultaire,
+  victoriametrics,
   vulcan,
   xephonk,
 ]

@@ -106,6 +106,7 @@ let databaseSchema = [
       'pql', // https://pinot.readthedocs.io/en/latest/pql_examples.html
       'm3query', // http://m3db.github.io/m3/how_to/query/
       'python',
+      'metricsql', // https://github.com/VictoriaMetrics/VictoriaMetrics/wiki/ExtendedPromQL
     ]
   },
   {

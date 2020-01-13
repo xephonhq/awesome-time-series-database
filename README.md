@@ -40,6 +40,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Seriously|https://github.com/dustin/seriesly|dead|go|localfs|http|json|mit|
 |Sidewinder|https://github.com/srotya/sidewinder|dead|java|localfs|tcp|sql|apache-2.0|
 |Tgres|https://github.com/tgres/tgres|dead|go|postgresql|tcp|sql|apache-2.0|
+|Timebala|https://github.com/mattbostock/timbala|dead|go|localfs|http|promql|apache-2.0|
 |Timely|https://github.com/NationalSecurityAgency/timely|maintained|java|hdfs,accumulo|http|json|apache-2.0|
 |TimescaleDB|https://github.com/timescale/timescaledb|active|c|postgresql|tcp|sql|apache-2.0|
 |Vaultaire|https://github.com/afcowie/vaultaire|dead|haskell|ceph|http|json|unknown|

@@ -30,8 +30,9 @@ import { pinot } from './pinot.js'
 import { prometheus } from './prometheus.js'
 import { seriously } from './seriously.js'
 import { sidewinder } from './sidewinder.js'
-import { timely } from './timely.js'
 import { tgres } from './tgres.js'
+import { timbala } from './timbala.js'
+import { timely } from './timely.js'
 import { timescaldb } from './timescaledb.js'
 import { vaultaire } from './vaultaire.js'
 import { victoriametrics } from './victoriametrics.js'
@@ -70,6 +71,7 @@ let databases = [
   seriously,
   sidewinder,
   tgres,
+  timbala,
   timely,
   timescaldb,
   vaultaire,

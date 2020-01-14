@@ -27,6 +27,7 @@ import { metrictank } from './metrictank.js'
 import { newts } from './newts.js'
 import { opentsdb } from './opentsdb.js'
 import { pinot } from './pinot.js'
+import { pipelinedb } from './pipelinedb.js'
 import { prometheus } from './prometheus.js'
 import { seriously } from './seriously.js'
 import { sidewinder } from './sidewinder.js'
@@ -71,6 +72,7 @@ let databases = [
   newts,
   opentsdb,
   pinot,
+  pipelinedb,
   prometheus,
   seriously,
   sidewinder,

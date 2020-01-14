@@ -83,6 +83,7 @@ let databaseSchema = [
     name: 'protocol',
     type: 'array',
     values: [
+      'embed',
       'prometheus',
       'http',
       'tcp',

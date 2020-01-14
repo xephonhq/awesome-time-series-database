@@ -48,6 +48,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Vaultaire|https://github.com/afcowie/vaultaire|dead|haskell|ceph|http|json|unknown|
 |VictoriaMetrics|https://github.com/VictoriaMetrics/VictoriaMetrics|active|go|localfs|http|promql,metricsql|apache-2.0|
 |Vulcan|https://github.com/digitalocean/vulcan|dead|go|cassandra|http|promql|apache-2.0|
+|Warp10|https://github.com/senx/warp10-platform|active|java|leveldb,hbase|http|warpscript|apache-2.0|
 |Xephon-K|https://github.com/xephonhq/xephon-k|dead|go|cassandra,localfs|http,grpc|json|mit|
 
 <!--DBTABLE_END-->

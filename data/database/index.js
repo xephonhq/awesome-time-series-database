@@ -39,6 +39,7 @@ import { timescaldb } from './timescaledb.js'
 import { vaultaire } from './vaultaire.js'
 import { victoriametrics } from './victoriametrics.js'
 import { vulcan } from './vulcan.js'
+import { warp10 } from './warp10.js'
 import { xephonk } from './xephonk.js'
 
 let databases = [
@@ -81,6 +82,7 @@ let databases = [
   vaultaire,
   victoriametrics,
   vulcan,
+  warp10,
   xephonk,
 ]
 

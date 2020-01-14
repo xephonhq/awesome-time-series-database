@@ -75,7 +75,8 @@ let databaseSchema = [
       'azdls', // https://azure.microsoft.com/en-us/services/storage/data-lake-storage/
       'solr',
       'mongodb',
-      'accumulo' // bigtable like on HDFS https://accumulo.apache.org/docs/2.x/getting-started/design
+      'accumulo', // bigtable like on HDFS https://accumulo.apache.org/docs/2.x/getting-started/design
+      'leveldb'
     ]
   },
   {
@@ -107,6 +108,7 @@ let databaseSchema = [
       'm3query', // http://m3db.github.io/m3/how_to/query/
       'python',
       'metricsql', // https://github.com/VictoriaMetrics/VictoriaMetrics/wiki/ExtendedPromQL
+      'warpscript', // https://warp10.io/content/03_Documentation/04_WarpScript/01_Concepts
     ]
   },
   {

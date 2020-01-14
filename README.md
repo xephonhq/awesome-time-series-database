@@ -39,6 +39,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Prometheus|https://github.com/prometheus/prometheus|active|go|localfs|prometheus|promql|apache-2.0|
 |Seriously|https://github.com/dustin/seriesly|dead|go|localfs|http|json|mit|
 |Sidewinder|https://github.com/srotya/sidewinder|dead|java|localfs|tcp|sql|apache-2.0|
+|SiriDB|https://github.com/SiriDB/siridb-server|active|c|localfs|http|text|mit|
 |Tgres|https://github.com/tgres/tgres|dead|go|postgresql|tcp|sql|apache-2.0|
 |Thanos|https://github.com/thanos-io/thanos|active|go|localfs,s3|http,grpc|promql|apache-2.0|
 |Timebala|https://github.com/mattbostock/timbala|dead|go|localfs|http|promql|apache-2.0|

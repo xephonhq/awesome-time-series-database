@@ -30,6 +30,7 @@ import { pinot } from './pinot.js'
 import { prometheus } from './prometheus.js'
 import { seriously } from './seriously.js'
 import { sidewinder } from './sidewinder.js'
+import { siridb } from './siridb.js'
 import { tgres } from './tgres.js'
 import { thanos } from './thanos.js'
 import { timbala } from './timbala.js'
@@ -71,6 +72,7 @@ let databases = [
   prometheus,
   seriously,
   sidewinder,
+  siridb,
   tgres,
   thanos,
   timbala,

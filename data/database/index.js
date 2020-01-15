@@ -32,6 +32,7 @@ import { prometheus } from './prometheus.js'
 import { seriously } from './seriously.js'
 import { sidewinder } from './sidewinder.js'
 import { siridb } from './siridb.js'
+import { tdengine } from './tdengine.js'
 import { tgres } from './tgres.js'
 import { thanos } from './thanos.js'
 import { timbala } from './timbala.js'
@@ -77,6 +78,7 @@ let databases = [
   seriously,
   sidewinder,
   siridb,
+  tdengine,
   tgres,
   thanos,
   timbala,

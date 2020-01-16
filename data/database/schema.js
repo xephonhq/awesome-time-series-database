@@ -51,6 +51,7 @@ let databaseSchema = [
       'go',
       'haskell',
       'java',
+      'javascript',
       'python',
       'rust',
       'scala'

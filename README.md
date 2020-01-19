@@ -32,6 +32,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |IRONdb|https://www.circonus.com/solutions/time-series-database/|active|c|localfs|http|json|proprietary|
 |KairosDB|https://github.com/kairosdb/kairosdb|maintained|java|cassandra|http|json|apache-2.0|
 |Khronus|https://github.com/khronus/khronus|dead|scala|cassandra|http|json,influxql|apache-2.0|
+|LinDB|https://github.com/lindb/lindb|active|go|localfs|http|sql|apache-2.0|
 |M3|https://github.com/m3db/m3|active|go|localfs|http|promql,graphite,m3query,sql|apache-2.0|
 |Metrictank|https://github.com/grafana/metrictank|active|go|cassandra,elasticsearch|http|graphite|agpl-3.0|
 |Newts|https://github.com/OpenNMS/newts/|maintained|java|cassandra|http|json|apache-2.0|

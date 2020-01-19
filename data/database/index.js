@@ -23,6 +23,7 @@ import { influxdb } from './influxdb.js'
 import { irondb } from './irondb.js'
 import { kairosdb } from './kairosdb.js'
 import { khronus } from './khronus.js'
+import { lindb } from './lindb.js'
 import { m3db } from './m3db.js'
 import { metrictank } from './metrictank.js'
 import { newts } from './newts.js'
@@ -71,6 +72,7 @@ let databases = [
   irondb,
   kairosdb,
   khronus,
+  lindb,
   m3db,
   metrictank,
   newts,

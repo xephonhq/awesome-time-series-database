@@ -77,7 +77,8 @@ let databaseSchema = [
       'solr',
       'mongodb',
       'accumulo', // bigtable like on HDFS https://accumulo.apache.org/docs/2.x/getting-started/design
-      'leveldb'
+      'leveldb',
+      'foundationdb',
     ]
   },
   {

@@ -41,6 +41,7 @@ import { timbala } from './timbala.js'
 import { timely } from './timely.js'
 import { timescaldb } from './timescaledb.js'
 import { traildb } from './traildb.js'
+import { tsdblayer } from './tsdblayer.js'
 import { uts } from './uts.js'
 import { vaultaire } from './vaultaire.js'
 import { victoriametrics } from './victoriametrics.js'
@@ -90,6 +91,7 @@ let databases = [
   timely,
   timescaldb,
   traildb,
+  tsdblayer,
   uts,
   vaultaire,
   victoriametrics,

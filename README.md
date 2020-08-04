@@ -40,6 +40,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Apache Pinot|https://github.com/apache/incubator-pinot|active|java|s3,hdfs,azdls|http|pql|apache-2.0|
 |PipelineDB|https://github.com/pipelinedb/pipelinedb|dead|c|postgresql|tcp|sql|apache-2.0|
 |Prometheus|https://github.com/prometheus/prometheus|active|go|localfs|prometheus|promql|apache-2.0|
+|QuestDB|https://github.com/questdb/questdb|active|java|localfs|sql|sql|apache-2.0|
 |Seriously|https://github.com/dustin/seriesly|dead|go|localfs|http|json|mit|
 |Sidewinder|https://github.com/srotya/sidewinder|dead|java|localfs|tcp|sql|apache-2.0|
 |SiriDB|https://github.com/SiriDB/siridb-server|active|c|localfs|http|text|mit|

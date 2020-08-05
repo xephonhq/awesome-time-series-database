@@ -4,7 +4,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2ea12ac4-c2b9-4767-87d6-8ac65ce5ee30/deploy-status)](https://app.netlify.com/sites/awesome-time-series-database/deploys)
 
 A curated list of time series databases.
-For filtering based on language, backend etc. Check out the [website](https://awesome-time-series-database.netlify.com/)
+For filtering based on language, backend etc. Check out the [Website](https://awesome-time-series-database.netlify.com/).
 
 <!--DBTABLE_START-->
 |name|github|status|lang|backend|protocol|query|license|
@@ -29,6 +29,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |HawkularMertics|https://github.com/hawkular/hawkular-metrics|maintained|java|cassandra|http|json|apache-2.0|
 |Heroic|https://github.com/spotify/heroic|maintained|java|bigtable,cassandra,elasticsearch|http|json|apache-2.0|
 |InfluxDB|https://github.com/influxdata/influxdb|active|go|localfs|http|influxql,flux|mit|
+|IoTDB|https://github.com/apache/incubator-iotdb|active|java|hdfs,localfs|tcp|sql|apache-2.0|
 |IRONdb|https://www.circonus.com/solutions/time-series-database/|active|c|localfs|http|json|proprietary|
 |KairosDB|https://github.com/kairosdb/kairosdb|maintained|java|cassandra|http|json|apache-2.0|
 |Khronus|https://github.com/khronus/khronus|dead|scala|cassandra|http|json,influxql|apache-2.0|

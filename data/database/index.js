@@ -20,6 +20,7 @@ import { gnocchi } from './gnocchi.js'
 import { hawkularmetrics } from './hawkularmetrics.js'
 import { heroic } from './heroic.js'
 import { influxdb } from './influxdb.js'
+import { iotdb } from './iotdb.js'
 import { irondb } from './irondb.js'
 import { kairosdb } from './kairosdb.js'
 import { khronus } from './khronus.js'
@@ -71,6 +72,7 @@ let databases = [
   hawkularmetrics,
   heroic,
   influxdb,
+  iotdb,
   irondb,
   kairosdb,
   khronus,

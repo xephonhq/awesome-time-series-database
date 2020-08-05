@@ -15,6 +15,7 @@ import { clickhouse } from './clickhouse.js'
 import { cortex } from './cortex.js'
 import { crate } from './crate.js'
 import { dalmatinerdb } from './dalmatinerdb.js'
+import { filodb } from './filodb.js'
 import { flint } from './flint.js'
 import { gnocchi } from './gnocchi.js'
 import { hawkularmetrics } from './hawkularmetrics.js'
@@ -68,6 +69,7 @@ let databases = [
   cortex,
   crate,
   dalmatinerdb,
+  filodb,
   flint,
   gnocchi,
   hawkularmetrics,

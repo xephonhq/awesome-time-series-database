@@ -24,6 +24,7 @@ For filtering based on language, backend etc. Check out the [Website](https://aw
 |Cortex|https://github.com/cortexproject/cortex|active|go|s3,cassandra,bigtable,dynamodb|http|promql|apache-2.0|
 |CrateDB|https://github.com/crate/crate|active|java|elasticsearch,s3|tcp|sql|apache-2.0|
 |DalmatinerDB|https://github.com/dalmatinerdb/dalmatinerdb|maintained|erlang|localfs|http|text|mit|
+|FiloDB|https://github.com/filodb/FiloDB|active|scala|cassandra|http|promql,metricsql|apache-2.0|
 |Flint|https://github.com/twosigma/flint|maintained|scala|spark|http|json|apache-2.0|
 |Gnocchi|https://github.com/gnocchixyz/gnocchi|dead|python|localfs|http|json|apache-2.0|
 |HawkularMertics|https://github.com/hawkular/hawkular-metrics|maintained|java|cassandra|http|json|apache-2.0|

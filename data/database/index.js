@@ -18,6 +18,7 @@ import { dalmatinerdb } from './dalmatinerdb.js'
 import { filodb } from './filodb.js'
 import { flint } from './flint.js'
 import { gnocchi } from './gnocchi.js'
+import { griddb } from './griddb.js'
 import { hawkularmetrics } from './hawkularmetrics.js'
 import { heroic } from './heroic.js'
 import { influxdb } from './influxdb.js'
@@ -72,6 +73,7 @@ let databases = [
   filodb,
   flint,
   gnocchi,
+  griddb,
   hawkularmetrics,
   heroic,
   influxdb,

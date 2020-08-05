@@ -27,6 +27,7 @@ For filtering based on language, backend etc. Check out the [Website](https://aw
 |FiloDB|https://github.com/filodb/FiloDB|active|scala|cassandra|http|promql,metricsql|apache-2.0|
 |Flint|https://github.com/twosigma/flint|maintained|scala|spark|http|json|apache-2.0|
 |Gnocchi|https://github.com/gnocchixyz/gnocchi|dead|python|localfs|http|json|apache-2.0|
+|GridDB|https://github.com/griddb/griddb|active|c++|localfs|jdbc|sql,tql|apache-2.0|
 |HawkularMertics|https://github.com/hawkular/hawkular-metrics|maintained|java|cassandra|http|json|apache-2.0|
 |Heroic|https://github.com/spotify/heroic|maintained|java|bigtable,cassandra,elasticsearch|http|json|apache-2.0|
 |InfluxDB|https://github.com/influxdata/influxdb|active|go|localfs|http|influxql,flux|mit|

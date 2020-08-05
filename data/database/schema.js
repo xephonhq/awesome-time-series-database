@@ -87,12 +87,13 @@ let databaseSchema = [
     values: [
       'embed',
       'prometheus',
-      'postgres',
       'http',
       'tcp',
       'udp',
       'grpc',
-      'thrift'
+      'thrift',
+      'postgres',
+      'jdbc'
     ]
   },
   {
@@ -113,6 +114,7 @@ let databaseSchema = [
       'python',
       'metricsql', // https://github.com/VictoriaMetrics/VictoriaMetrics/wiki/ExtendedPromQL
       'warpscript', // https://warp10.io/content/03_Documentation/04_WarpScript/01_Concepts
+      'tql' // https://github.com/griddb/docs-en/blob/master/manuals/GridDB_TQL_Reference.md
     ]
   },
   {

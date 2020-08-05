@@ -6,7 +6,8 @@ let timescaldb = {
   status: 'active',
   lang: 'c',
   backend: ['postgresql'],
-  protocol: ['tcp'],
+  // TODO: rethink what we should put for protocol
+  protocol: ['postgres'],
   query: ['sql'],
   license: 'apache-2.0', // TODO: it's dual licensed ... the tsl folder is licensed under its own license https://github.com/timescale/timescaledb/blob/master/LICENSE
   author: [

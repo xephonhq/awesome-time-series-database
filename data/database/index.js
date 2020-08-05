@@ -31,6 +31,7 @@ import { opentsdb } from './opentsdb.js'
 import { pinot } from './pinot.js'
 import { pipelinedb } from './pipelinedb.js'
 import { prometheus } from './prometheus.js'
+import { questdb } from './questdb.js'
 import { seriously } from './seriously.js'
 import { sidewinder } from './sidewinder.js'
 import { siridb } from './siridb.js'
@@ -81,6 +82,7 @@ let databases = [
   pinot,
   pipelinedb,
   prometheus,
+  questdb,
   seriously,
   sidewinder,
   siridb,

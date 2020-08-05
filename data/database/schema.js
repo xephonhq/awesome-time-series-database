@@ -87,6 +87,7 @@ let databaseSchema = [
     values: [
       'embed',
       'prometheus',
+      'postgres',
       'http',
       'tcp',
       'udp',

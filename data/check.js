@@ -2,6 +2,8 @@ import { databases, databaseSchema } from './database/index.js'
 
 // checks if all the properties defined in schema are presented and the type is correct.
 function checkDatabases () {
+  // TODO: ls /data/databases and make sure all databases are imported
+
   // TODO: how to handle error in js? errs++ and console.error is definitely not the right way
   let errs = 0
   for (const db of databases) {

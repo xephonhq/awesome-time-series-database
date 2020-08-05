@@ -40,7 +40,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Apache Pinot|https://github.com/apache/incubator-pinot|active|java|s3,hdfs,azdls|http|pql|apache-2.0|
 |PipelineDB|https://github.com/pipelinedb/pipelinedb|dead|c|postgresql|tcp|sql|apache-2.0|
 |Prometheus|https://github.com/prometheus/prometheus|active|go|localfs|prometheus|promql|apache-2.0|
-|QuestDB|https://github.com/questdb/questdb|active|java|localfs|sql|sql|apache-2.0|
+|QuestDB|https://github.com/questdb/questdb|active|java|localfs|postgres|sql|apache-2.0|
 |Seriously|https://github.com/dustin/seriesly|dead|go|localfs|http|json|mit|
 |Sidewinder|https://github.com/srotya/sidewinder|dead|java|localfs|tcp|sql|apache-2.0|
 |SiriDB|https://github.com/SiriDB/siridb-server|active|c|localfs|http|text|mit|
@@ -49,7 +49,7 @@ For filtering based on language, backend etc. Check out the [website](https://aw
 |Thanos|https://github.com/thanos-io/thanos|active|go|localfs,s3|http,grpc|promql|apache-2.0|
 |Timebala|https://github.com/mattbostock/timbala|dead|go|localfs|http|promql|apache-2.0|
 |Timely|https://github.com/NationalSecurityAgency/timely|maintained|java|hdfs,accumulo|http|json|apache-2.0|
-|TimescaleDB|https://github.com/timescale/timescaledb|active|c|postgresql|tcp|sql|apache-2.0|
+|TimescaleDB|https://github.com/timescale/timescaledb|active|c|postgresql|postgres|sql|apache-2.0|
 |TrailDB|https://github.com/traildb/traildb|dead|c|localfs|embed|python|mit|
 |tsdb-layer|https://github.com/richardartoul/tsdb-layer|dead|go|foundationdb|grpc|text|unknown|
 |μts|https://github.com/mixer/uts|dead|javascript|memory|embed|json|mit|

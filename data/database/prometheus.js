@@ -6,6 +6,7 @@ let prometheus = {
   status: 'active',
   lang: 'go',
   backend: ['localfs'],
+  // TODO: rethink what we should put for protocol, ingestion and query is different
   protocol: ['prometheus'],
   query: ['promql'],
   license: 'apache-2.0',

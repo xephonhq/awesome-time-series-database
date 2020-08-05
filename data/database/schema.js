@@ -125,6 +125,7 @@ let databaseSchema = [
       'mit',
       'bsd',
       'agpl-3.0',
+      'gpl-3.0',
       'unknown',
       'proprietary'
     ]

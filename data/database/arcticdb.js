@@ -1,8 +1,8 @@
 let arcticdb = {
   name: 'arcticdb',
   displayName: 'ArcticDB',
-  website: 'https://docs.arcticdb.io/',
-  github: 'https://github.com/man-group/arctic',
+  website: 'https://arcticdb.io/',
+  github: 'https://github.com/man-group/ArcticDB',
   status: 'active',
   lang: 'python',
   backend: ['s3', 'localfs'],
